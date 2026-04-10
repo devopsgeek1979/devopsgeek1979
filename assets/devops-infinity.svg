@@ -1,14 +1,15 @@
-<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="320" viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg">
+
   <defs>
-    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:1" />
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
 
     <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
-        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
@@ -19,29 +20,36 @@
         stroke: url(#grad);
         stroke-width: 8;
         stroke-linecap: round;
-        filter: url(#glow);
-        stroke-dasharray: 20;
+        stroke-dasharray: 25;
         animation: dash 4s linear infinite;
+        filter: url(#glow);
       }
 
       @keyframes dash {
-        to {
-          stroke-dashoffset: -200;
-        }
+        to { stroke-dashoffset: -200; }
       }
 
-      .text {
+      .label {
         fill: #e2e8f0;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
         text-anchor: middle;
+        font-family: Arial, sans-serif;
       }
 
       .title {
         fill: #38bdf8;
         font-size: 22px;
-        font-weight: bold;
         text-anchor: middle;
+        font-weight: bold;
+      }
+
+      .node {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,100% { transform: translateY(0); }
+        50% { transform: translateY(-6px); }
       }
 
       .watermark {
@@ -54,30 +62,49 @@
   </defs>
 
   <!-- Title -->
-  <text x="450" y="40" class="title">DevOps Lifecycle</text>
+  <text x="500" y="40" class="title">DevOps Lifecycle</text>
 
   <!-- Infinity Loop -->
-  <path d="M200,150 
-           C200,80 350,80 350,150 
-           C350,220 500,220 500,150 
-           C500,80 650,80 650,150 
-           C650,220 500,220 500,150 
-           C500,80 350,80 350,150 
-           C350,220 200,220 200,150"
+  <path d="M250,160 
+           C250,90 400,90 400,160 
+           C400,230 550,230 550,160 
+           C550,90 700,90 700,160 
+           C700,230 550,230 550,160 
+           C550,90 400,90 400,160 
+           C400,230 250,230 250,160"
         class="loop"/>
 
   <!-- Labels -->
-  <text x="275" y="85" class="text">Code</text>
-  <text x="450" y="60" class="text">Build</text>
-  <text x="625" y="85" class="text">Test</text>
-  <text x="625" y="215" class="text">Deploy</text>
-  <text x="450" y="240" class="text">Monitor</text>
-  <text x="275" y="215" class="text">Feedback</text>
+  <text x="320" y="100" class="label">Code</text>
+  <text x="500" y="80" class="label">Build</text>
+  <text x="680" y="100" class="label">Test</text>
+  <text x="680" y="230" class="label">Deploy</text>
+  <text x="500" y="250" class="label">Monitor</text>
+  <text x="320" y="230" class="label">Feedback</text>
 
-  <!-- Tech Labels -->
-  <text x="320" y="150" class="text">AWS</text>
-  <text x="580" y="150" class="text">Kubernetes</text>
+  <!-- Icons (moving nodes) -->
+  
+  <!-- Docker -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+         x="360" y="140" width="40" height="40" class="node"/>
+
+  <!-- AWS -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+         x="480" y="130" width="60" height="40" class="node"/>
+
+  <!-- Kubernetes -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+         x="600" y="140" width="40" height="40" class="node"/>
+
+  <!-- CI/CD -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+         x="450" y="200" width="35" height="35" class="node"/>
+
+  <!-- Monitoring -->
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
+         x="540" y="200" width="35" height="35" class="node"/>
 
   <!-- Branding -->
-  <text x="450" y="280" class="watermark">Shashi Pal • DevOps Engineer</text>
+  <text x="500" y="300" class="watermark">Shashi Pal • DevOps Engineer</text>
+
 </svg>
