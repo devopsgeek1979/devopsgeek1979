@@ -1,0 +1,59 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box {
+      fill: #0f172a;
+      stroke: #38bdf8;
+      stroke-width: 2;
+      rx: 10;
+    }
+    .text {
+      fill: #e2e8f0;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+    .arrow {
+      stroke: #38bdf8;
+      stroke-width: 2;
+      marker-end: url(#arrowhead);
+      stroke-dasharray: 5;
+      animation: dash 2s linear infinite;
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: -10;
+      }
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+    refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#38bdf8"/>
+    </marker>
+  </defs>
+
+  <!-- Boxes -->
+  <rect x="20" y="70" width="140" height="60" class="box"/>
+  <text x="90" y="100" class="text">Code (GitHub)</text>
+
+  <rect x="200" y="70" width="140" height="60" class="box"/>
+  <text x="270" y="100" class="text">Build (Docker)</text>
+
+  <rect x="380" y="70" width="140" height="60" class="box"/>
+  <text x="450" y="100" class="text">CI/CD</text>
+
+  <rect x="560" y="70" width="140" height="60" class="box"/>
+  <text x="630" y="100" class="text">Deploy (K8s)</text>
+
+  <rect x="740" y="70" width="140" height="60" class="box"/>
+  <text x="810" y="100" class="text">Monitor</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="100" x2="200" y2="100" class="arrow"/>
+  <line x1="340" y1="100" x2="380" y2="100" class="arrow"/>
+  <line x1="520" y1="100" x2="560" y2="100" class="arrow"/>
+  <line x1="700" y1="100" x2="740" y2="100" class="arrow"/>
+
+</svg>
