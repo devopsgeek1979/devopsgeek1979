@@ -1,4 +1,4 @@
-# 🚀 Shashi Pal — DevOps Architect
+# 🚀 Shashi Pal — Platform Engineer
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=DevOps+Engineer+%7C+16%2B+Years+Experience;Cloud+%7C+Kubernetes+%7C+Automation+Expert;Building+Scalable+%26+Resilient+Systems;Automation+is+not+a+choice%2C+it's+a+standard" />
