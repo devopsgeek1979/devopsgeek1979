@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Shashi Pal
 
-🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems**
+🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems • Linux**
 
 ---
 
