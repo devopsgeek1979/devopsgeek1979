@@ -1,87 +1,137 @@
-# 👋 Hi, I'm Shashi Pal
-
-🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems**
-
----
-
-## ♾️ DevOps Lifecycle
+# 🚀 Shashi Pal — DevOps Architect
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/Shashi.png" />
-</p>
-
-<p align="center">
-<strong>Automate • Scale • Monitor • Improve</strong>
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=800&lines=DevOps+Engineer+%7C+16%2B+Years+Experience;Cloud+%7C+Kubernetes+%7C+Automation+Expert;Building+Scalable+%26+Resilient+Systems;Automation+is+not+a+choice%2C+it's+a+standard" />
 </p>
 
 ---
 
-## ☁️ Tech Stack
+## 🧭 DevOps Philosophy
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,ansible,terraform,linux,githubactions,jenkins,grafana,prometheus,postgres" />
-</p>
-
----
-
-## 📊 GitHub Analytics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=devopsgeek1979&show_icons=true&theme=tokyonight&count_private=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devopsgeek1979&theme=tokyonight" />
+  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/Shashi.png" width="80%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devopsgeek1979&layout=compact&theme=tokyonight" />
+<strong>Design → Automate → Scale → Observe → Optimize ♾️</strong>
 </p>
 
 ---
 
 ## 🧠 About Me
 
-I am a **Senior DevOps Engineer with 16+ years of experience** specializing in designing and managing **highly available, scalable, and automated infrastructure**.
+```yaml
+name: Shashi Pal
+role: Senior DevOps Engineer
+experience: 16+ years
+specialization:
+  - Cloud Architecture
+  - Kubernetes & Containerization
+  - Infrastructure as Code
+  - High Availability Systems
+  - CI/CD Automation
 
-### 🔥 Core Expertise
+philosophy: "Automate everything. Eliminate toil. Build resilient systems."
+```
 
-* ⚙️ CI/CD Pipelines → GitHub Actions, Jenkins
-* ☁️ Cloud Platforms → AWS, Azure
-* 🐳 Containers → Docker, Kubernetes, Rancher
-* 🗄️ HA Systems → PostgreSQL, Patroni, HAProxy
-* 📦 IaC → Terraform, Ansible
-* 📊 Monitoring → Grafana, Prometheus, PMM
+💡 I design **production-grade infrastructure** that scales effortlessly, heals automatically, and doesn't wake engineers at 3 AM.
 
----
-
-## 💼 What I Deliver
-
-* 🚀 Production-grade architecture
-* 🔁 Automation-first systems
-* ⚡ High availability & failover design
-* 📈 Performance & scalability optimization
-* 🔐 Reliable and resilient infrastructure
+⚙️ I don't just deploy systems — I engineer **self-healing, observable, and fault-tolerant platforms**.
 
 ---
 
-## 📂 Featured Projects
+## ⚡ Tech Arsenal
 
-🔹 DevOps Job Automation Platform
-🔹 Terraform Multi-Cloud Infrastructure
-🔹 PostgreSQL HA Cluster
-🔹 Monitoring Stack (Grafana + PMM)
+### ☁️ Cloud & DevOps
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,ansible,terraform,githubactions,jenkins" />
+</p>
+
+### 🐧 Linux Expertise
+
+<p align="center">
+  <img src="https://img.shields.io/badge/RHEL-Enterprise-red?style=for-the-badge&logo=redhat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SUSE-SAP%20Linux-green?style=for-the-badge&logo=suse&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Ubuntu-Server-orange?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+</p>
+
+### 📊 Observability & Databases
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=grafana,prometheus,postgres" />
+</p>
 
 ---
 
-## 🎯 Career Focus
+## 📊 GitHub Intelligence
 
-💡 Open to opportunities in:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=devopsgeek1979&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devopsgeek1979&theme=tokyonight&hide_border=true" height="170"/>
+</p>
 
-* DevOps Engineer
-* Site Reliability Engineer (SRE)
-* Cloud Infrastructure
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devopsgeek1979&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
 
 ---
 
-## 🤝 Connect With Me
+## 🏗️ Architecture Mindset
+
+```text
+          ┌───────────────┐
+          │   Users       │
+          └──────┬────────┘
+                 │
+        ┌────────▼────────┐
+        │  Load Balancer  │
+        └────────┬────────┘
+                 │
+     ┌───────────▼───────────┐
+     │   Kubernetes Cluster  │
+     └───────────┬───────────┘
+                 │
+     ┌───────────▼───────────┐
+     │  HA Database Cluster  │
+     │ (Postgres + Patroni)  │
+     └───────────────────────┘
+```
+
+---
+
+## 💼 Featured Work
+
+| Project                           | Description                                  |
+| --------------------------------- | -------------------------------------------- |
+| 🚀 DevOps Job Automation Platform | AI-powered job application automation system |
+| ☁️ Terraform Multi-Cloud          | Provision AWS + Azure infra using IaC        |
+| 🗄️ PostgreSQL HA Cluster         | Patroni-based auto failover system           |
+| 📊 Monitoring Stack               | Grafana + Prometheus + PMM                   |
+
+---
+
+## 🎯 What Sets Me Apart
+
+✔️ I design **zero-downtime systems**
+✔️ I automate **everything that repeats twice**
+✔️ I build infra that **scales without human intervention**
+✔️ I debug systems others give up on
+
+---
+
+## 📈 Current Focus
+
+```diff
++ Kubernetes Advanced Operations
++ Multi-Cloud Architecture (AWS + Azure)
++ Platform Engineering
++ Observability & Performance Optimization
+```
+
+---
+
+## 🤝 Let's Connect
 
 <p align="center">
   <a href="https://github.com/devopsgeek1979">
@@ -94,10 +144,30 @@ I am a **Senior DevOps Engineer with 16+ years of experience** specializing in d
 
 ---
 
-## ⚡ DevOps Mindset
+## ⚡ DevOps Creed
 
-> "Automate everything. Build resilient systems. Scale without limits."
+> “Infrastructure should be **invisible when working** and **transparent when failing**.”
 
 ---
 
-⭐ *Thanks for visiting my profile — feel free to explore my repositories and connect!*
+## 🧩 Fun Fact
+
+💬 I trust:
+
+* YAML more than documentation
+* Logs more than assumptions
+* Automation more than humans 😄
+
+---
+
+## 🌟 Profile Views
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=devopsgeek1979&label=Profile%20Views&color=blue&style=flat" />
+</p>
+
+---
+
+⭐ **If you like clean architecture, scalable systems, and smart automation — you're in the right place.**
+
+---
