@@ -1,22 +1,19 @@
 # 👋 Hi, I'm Shashi Pal
 
-🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems • Linux**
+🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems**
 
 ---
 
-## ♾️ DevOps Lifecycle  
+## ♾️ DevOps Lifecycle
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=DevOps+Lifecycle;Automation+%7C+Scalability+%7C+Reliability" />
+  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/devops-infinity.svg" />
 </p>
 
 <p align="center">
-  <img src="https://img.icons8.com/fluency/96/devops.png" />
+<strong>Automate • Scale • Monitor • Improve</strong>
 </p>
 
-<p align="center">
-<strong>Plan → Code → Build → Test → Release → Deploy → Operate → Monitor</strong>
-</p>
 ---
 
 ## ☁️ Tech Stack
@@ -40,17 +37,9 @@
 
 ---
 
-## 📦 Repository Insights
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devopsgeek1979&theme=tokyonight" />
-</p>
-
----
-
 ## 🧠 About Me
 
-I am a **Senior DevOps Engineer with 16+ years of experience** focused on building **scalable, automated, and highly available infrastructure**.
+I am a **Senior DevOps Engineer with 16+ years of experience** specializing in designing and managing **highly available, scalable, and automated infrastructure**.
 
 ### 🔥 Core Expertise
 
@@ -65,27 +54,20 @@ I am a **Senior DevOps Engineer with 16+ years of experience** focused on buildi
 
 ## 💼 What I Deliver
 
-* 🚀 Production-grade infrastructure design
-* 🔁 End-to-end automation pipelines
-* ⚡ High availability & failover architecture
-* 📈 Performance optimization & scaling
-* 🔐 Reliability & uptime-focused systems
+* 🚀 Production-grade architecture
+* 🔁 Automation-first systems
+* ⚡ High availability & failover design
+* 📈 Performance & scalability optimization
+* 🔐 Reliable and resilient infrastructure
 
 ---
 
 ## 📂 Featured Projects
 
-🔹 **DevOps Job Automation Platform**
-AI-powered automation using CI/CD pipelines
-
-🔹 **Terraform Multi-Cloud Infrastructure**
-Reusable infrastructure modules across environments
-
-🔹 **PostgreSQL HA Cluster**
-3-node setup with automatic failover
-
-🔹 **Monitoring Stack (Grafana + PMM)**
-Real-time observability for containers & infra
+🔹 DevOps Job Automation Platform
+🔹 Terraform Multi-Cloud Infrastructure
+🔹 PostgreSQL HA Cluster
+🔹 Monitoring Stack (Grafana + PMM)
 
 ---
 
@@ -93,8 +75,8 @@ Real-time observability for containers & infra
 
 💡 Open to opportunities in:
 
-* DevOps Engineering
-* Site Reliability Engineering (SRE)
+* DevOps Engineer
+* Site Reliability Engineer (SRE)
 * Cloud Infrastructure
 
 ---
@@ -118,4 +100,4 @@ Real-time observability for containers & infra
 
 ---
 
-⭐ *Thanks for visiting my profile — explore my repositories and let's connect!*
+⭐ *Thanks for visiting my profile — feel free to explore my repositories and connect!*
