@@ -4,14 +4,18 @@
 
 ---
 
-## ⚙️ DevOps Pipeline
+## ♾️ DevOps Lifecycle  
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:1e3c72,100:2a5298&height=220&section=header&text=Shashi%20Pal%20|%20DevOps%20Pipeline&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=35" />
+  <img src="https://img.shields.io/badge/DevOps-Lifecycle-0f172a?style=for-the-badge&logo=devops&logoColor=38bdf8" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=38BDF8&center=true&vCenter=true&width=800&lines=Code+→+Build+→+Test+→+Deploy+→+Monitor;Automation+First+Approach;High+Availability+%7C+Scalability+%7C+Reliability" />
+  <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/100/external-devops-computer-programming-flaticons-flat-flat-icons.png" />
+</p>
+
+<p align="center">
+<strong>Code → Build → Test → Deploy → Monitor → Improve</strong>
 </p>
 
 ---
