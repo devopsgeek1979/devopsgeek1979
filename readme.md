@@ -7,17 +7,16 @@
 ## ♾️ DevOps Lifecycle  
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DevOps-Lifecycle-0f172a?style=for-the-badge&logo=devops&logoColor=38bdf8" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=38BDF8&center=true&vCenter=true&width=700&lines=DevOps+Lifecycle;Automation+%7C+Scalability+%7C+Reliability" />
 </p>
 
 <p align="center">
-  <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/100/external-devops-computer-programming-flaticons-flat-flat-icons.png" />
+  <img src="https://img.icons8.com/fluency/96/devops.png" />
 </p>
 
 <p align="center">
-<strong>Code → Build → Test → Deploy → Monitor → Improve</strong>
+<strong>Plan → Code → Build → Test → Release → Deploy → Operate → Monitor</strong>
 </p>
-
 ---
 
 ## ☁️ Tech Stack
