@@ -7,7 +7,7 @@
 ## ♾️ DevOps Lifecycle
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/shashi.png" />
+  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/Shashi.png" />
 </p>
 
 <p align="center">
