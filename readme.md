@@ -1,110 +1,102 @@
 # 👋 Hi, I'm Shashi Pal
 
-💼 **Senior DevOps Engineer | Linux & Automation Specialist | Cloud & Infrastructure Enthusiast**
+🚀 **Senior DevOps Engineer | 16+ Years | Cloud • Automation • Kubernetes • High Availability Systems**
 
 ---
 
-## 🔧 About Me
-
-I am a **DevOps Engineer with 16+ years of IT experience**, specializing in:
-
-* Linux System Administration (RHEL, SUSE, Debian)
-* Infrastructure Automation (Ansible, Terraform)
-* CI/CD Pipeline Design (GitHub Actions, Jenkins)
-* Containerization & Orchestration (Docker, Kubernetes, Rancher)
-* High Availability & Clustering (PostgreSQL, Patroni, HAProxy, VCS)
-* Monitoring & Observability (Grafana, Prometheus, PMM)
-
-💡 I focus on building **scalable, automated, and production-grade infrastructure** with strong reliability and performance.
-
----
-
-## 🛠️ Tech Stack
-
-### 💻 OS & Infrastructure
-
-* Linux (RHEL, SUSE, Ubuntu, Debian)
-* Windows Server (Legacy Support)
-
-### ⚙️ DevOps & Automation
-
-* Ansible
-* Terraform
-* Bash / Shell Scripting
-* ## ⚙️ DevOps Pipeline
+## ♾️ DevOps Philosophy
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/devops-pipeline.svg" />
+  <img src="https://miro.medium.com/v2/resize:fit:800/1*7nQK6r0J5AZt0pOEtp5uWg.png" width="120" alt="DevOps Infinity Loop"/>
 </p>
 
-### ☁️ Cloud & Virtualization
+<p align="center">
+<strong>Plan → Code → Build → Test → Release → Deploy → Operate → Monitor → Repeat</strong>
+</p>
 
-* AWS (Learning & Hands-on Projects)
-* VMware
-* Linode
+---
 
-### 🐳 Containers & Orchestration
+## ⚙️ DevOps Pipeline
 
-* Docker
-* Kubernetes
-* Rancher
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/devops-pipeline.svg" alt="DevOps Pipeline"/>
+</p>
 
-### 🔁 CI/CD
+---
 
-* GitHub Actions
-* Jenkins
+## ☁️ Tech Stack
 
-### 🗄️ Databases
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=aws,azure,docker,kubernetes,ansible,terraform,linux,githubactions,jenkins,grafana,prometheus,postgres" alt="Tech Stack Icons"/>
+</p>
 
-* PostgreSQL (HA, Replication, Patroni)
-* MySQL
+---
 
-### 📊 Monitoring
+## 📊 GitHub Analytics
 
-* Grafana
-* Prometheus
-* Percona Monitoring & Management (PMM)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=devopsgeek1979&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devopsgeek1979&theme=tokyonight" alt="GitHub Streak"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devopsgeek1979&layout=compact&theme=tokyonight" alt="Top Languages"/>
+</p>
+
+---
+
+## 📦 Repository Insights
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devopsgeek1979&theme=tokyonight" alt="Profile Summary"/>
+</p>
+
+---
+
+## 🧠 About Me
+
+I am a **Senior DevOps Engineer with 16+ years of experience** specializing in designing and managing **highly available, scalable, and automated infrastructure**.
+
+### 🔥 Core Expertise
+
+* ⚙️ CI/CD Pipeline Design (GitHub Actions, Jenkins)
+* ☁️ Cloud & Hybrid Infrastructure (AWS, Azure)
+* 🐳 Containers & Orchestration (Docker, Kubernetes, Rancher)
+* 🗄️ High Availability Systems (PostgreSQL, Patroni, HAProxy)
+* 📦 Infrastructure as Code (Terraform, Ansible)
+* 📊 Monitoring & Observability (Grafana, Prometheus, PMM)
+
+---
+
+## 💼 What I Deliver
+
+* 🚀 Production-grade system architecture
+* 🔁 End-to-end automation
+* ⚡ High availability & failover design
+* 📈 Performance optimization & scalability
+* 🔐 Reliability, stability, and uptime
 
 ---
 
 ## 📂 Featured Projects
 
-### 🔹 DevOps Job Automation Platform
-
+🔹 **DevOps Job Automation Platform**
 Automates job applications using AI + CI/CD pipelines
 
-* GitHub Actions-based automation
-* Resume + job matching logic
+🔹 **Terraform Multi-Cloud Infrastructure**
+Reusable IaC modules for scalable deployments
 
-### 🔹 Terraform Multi-Cloud Infrastructure
+🔹 **PostgreSQL HA Cluster**
+3-node cluster with Patroni & automatic failover
 
-* Infrastructure provisioning across environments
-* Modular Terraform design
-
-### 🔹 PostgreSQL HA Cluster
-
-* 3-node cluster with Patroni + HAProxy
-* Automatic failover & replication
-
-### 🔹 Docker Swarm Monitoring Setup
-
-* Centralized monitoring using Grafana + PMM
-* Multi-node container tracking
-
----
-
-## 📈 What I'm Currently Working On
-
-* 🔍 Exploring advanced Kubernetes (Rancher + HA setups)
-* ☁️ Strengthening cloud-native architecture skills
-* 🤖 Building AI-powered automation tools
-* 📦 Improving CI/CD pipelines for production-grade systems
+🔹 **Monitoring Stack (Grafana + PMM)**
+Real-time observability for infrastructure & containers
 
 ---
 
 ## 🎯 Career Focus
 
-I am actively looking for roles in:
+💡 Open to opportunities in:
 
 * DevOps Engineering
 * Site Reliability Engineering (SRE)
@@ -112,17 +104,23 @@ I am actively looking for roles in:
 
 ---
 
-## 📫 Connect With Me
+## 🤝 Connect With Me
 
-* 💼 LinkedIn: https://www.linkedin.com/in/shashi-pal1979/
-* 🐙 GitHub: https://github.com/devopsgeek1979
+<p align="center">
+  <a href="https://github.com/devopsgeek1979">
+    <img src="https://img.shields.io/badge/GitHub-@devopsgeek1979-black?style=for-the-badge&logo=github" alt="GitHub Profile"/>
+  </a>
+  <a href="https://www.linkedin.com/in/shashi-pal1979/">
+    <img src="https://img.shields.io/badge/LinkedIn-Shashi%20Pal-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn Profile"/>
+  </a>
+</p>
 
 ---
 
-## ⚡ Fun Fact
+## ⚡ DevOps Mindset
 
-I enjoy solving **complex infrastructure problems**, especially around **high availability, automation, and performance tuning**.
+> "Automate everything. Build resilient systems. Scale without limits."
 
 ---
 
-⭐ *If you find my work useful, feel free to explore my repositories and connect!*
+⭐ *Thanks for visiting my profile — feel free to explore my repositories and connect!*
