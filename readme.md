@@ -31,6 +31,11 @@ I am a **DevOps Engineer with 16+ years of IT experience**, specializing in:
 * Ansible
 * Terraform
 * Bash / Shell Scripting
+* ## ⚙️ DevOps Pipeline
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/devopsgeek1979/devopsgeek1979/main/assets/devops-pipeline.svg" />
+</p>
 
 ### ☁️ Cloud & Virtualization
 
