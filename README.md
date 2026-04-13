@@ -11,6 +11,11 @@
 <p align="center">
   <a href="https://github.com/devopsgeek1979"><img src="https://img.shields.io/badge/GitHub-devopsgeek1979-black?style=for-the-badge&logo=github"/></a>
   <a href="https://www.linkedin.com/in/shashi-pal1979/"><img src="https://img.shields.io/badge/LinkedIn-Shashi%20Pal-blue?style=for-the-badge&logo=linkedin"/></a>
+  <a href="https://devopsgeek1979.github.io/devopsgeek1979/"><img src="https://img.shields.io/badge/Portfolio-Live%20Website-0ea5e9?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
+</p>
+
+<p align="center">
+  <strong>🌐 Prefer a website view? Visit: <a href="https://devopsgeek1979.github.io/devopsgeek1979/">devopsgeek1979.github.io/devopsgeek1979</a></strong>
 </p>
 
 ---
