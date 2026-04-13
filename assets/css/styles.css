@@ -1,0 +1,261 @@
+:root {
+  --bg: #060b1a;
+  --panel: #0f1833;
+  --panel-soft: #132145;
+  --text: #eaf0ff;
+  --muted: #a9b8df;
+  --accent: #4ad7ff;
+  --accent-2: #7f8dff;
+  --border: #2a3b73;
+  --ok: #39d98a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 85% -20%, #243b78 0%, var(--bg) 48%);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid var(--border);
+  background: rgba(8, 14, 31, 0.85);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.nav {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 12px 22px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #dce6ff;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  border-color: var(--border);
+  background: var(--panel-soft);
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 24px 22px 38px;
+}
+
+.hero {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: linear-gradient(180deg, #12204a 0%, #0d1631 100%);
+  padding: 22px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.hero-head {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2vw + 1rem, 2.5rem);
+}
+
+.hero p {
+  margin: 12px 0 0;
+  color: var(--muted);
+}
+
+.button-row {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.button {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+
+.grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+.card {
+  grid-column: span 12;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, var(--panel) 0%, #0d142b 100%);
+  padding: 20px;
+}
+
+.card h2 {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.card p,
+.card li {
+  color: var(--muted);
+}
+
+.chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  border: 1px solid #30457f;
+  border-radius: 999px;
+  background: var(--panel-soft);
+  color: #e6eeff;
+  font-size: 0.88rem;
+  padding: 6px 10px;
+}
+
+.list-clean {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.kpi {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.kpi .item {
+  border: 1px solid var(--border);
+  background: #0c1530;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.kpi .item strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.timeline {
+  border-left: 2px solid var(--border);
+  margin-left: 6px;
+  padding-left: 14px;
+}
+
+.timeline .point {
+  margin: 0 0 16px;
+}
+
+.project {
+  border: 1px solid #2f4684;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #0c1530;
+}
+
+.project h3 {
+  margin: 0 0 8px;
+}
+
+.project p {
+  margin: 0;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  color: #001528;
+  background: var(--ok);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+.footer {
+  margin-top: 22px;
+  text-align: center;
+  color: #8fa2d9;
+  font-size: 0.92rem;
+}
+
+.notice {
+  border: 1px dashed #4860a4;
+  background: #0b1330;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+@media (min-width: 900px) {
+  .half {
+    grid-column: span 6;
+  }
+
+  .third {
+    grid-column: span 4;
+  }
+}

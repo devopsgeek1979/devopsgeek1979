@@ -3,189 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Shashi Pal - DevOps & Platform Engineer" />
+    <meta name="description" content="Shashi Pal - Senior DevOps and Platform Engineer portfolio home page" />
     <title>Shashi Pal | DevOps & Platform Engineer</title>
-    <style>
-      :root {
-        --bg: #070b18;
-        --panel: #101936;
-        --panel-2: #162349;
-        --text: #edf2ff;
-        --muted: #a7b6e4;
-        --accent: #4ad7ff;
-        --accent-2: #7d8bff;
-        --border: #2a3b73;
-      }
-      * { box-sizing: border-box; }
-      html, body { margin: 0; padding: 0; }
-      body {
-        font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        background: radial-gradient(circle at 85% -10%, #243b78 0%, var(--bg) 50%);
-        color: var(--text);
-        line-height: 1.65;
-      }
-      .container {
-        max-width: 1120px;
-        margin: 0 auto;
-        padding: 22px;
-      }
-      .hero {
-        padding: 22px;
-        border: 1px solid var(--border);
-        border-radius: 18px;
-        background: linear-gradient(180deg, #12204a 0%, #0d1631 100%);
-        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-      }
-      .hero h1 {
-        margin: 0 0 8px;
-        font-size: clamp(1.6rem, 2vw + 1rem, 2.5rem);
-      }
-      .hero-head {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        flex-wrap: wrap;
-        margin-bottom: 6px;
-      }
-      .profile-photo {
-        width: 78px;
-        height: 78px;
-        border-radius: 50%;
-        border: 2px solid var(--accent);
-        object-fit: cover;
-      }
-      .hero p {
-        color: var(--muted);
-        margin: 8px 0 18px;
-      }
-      .hero img.banner {
-        width: 100%;
-        border-radius: 14px;
-        border: 1px solid #36519f;
-      }
-      .cta {
-        margin-top: 16px;
-        display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
-      }
-      .cta a {
-        text-decoration: none;
-        color: #fff;
-        background: linear-gradient(90deg, var(--accent-2), var(--accent));
-        border-radius: 10px;
-        padding: 10px 14px;
-        font-weight: 700;
-      }
-      .grid {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 14px;
-      }
-      .card {
-        grid-column: span 12;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 20px;
-        background: linear-gradient(180deg, var(--panel) 0%, #0d142b 100%);
-      }
-      .card h2 {
-        margin: 0 0 12px;
-        color: var(--accent);
-        font-size: 1.2rem;
-      }
-      .card p,
-      .card li { color: var(--muted); }
-      .chips {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-      }
-      .chip {
-        border: 1px solid #30457f;
-        border-radius: 999px;
-        background: var(--panel-2);
-        color: #e6eeff;
-        font-size: 0.88rem;
-        padding: 6px 10px;
-      }
-      .stats {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .stats img {
-        max-width: 100%;
-        border-radius: 12px;
-        border: 1px solid #2f4684;
-      }
-      .philosophy-image {
-        max-width: 100%;
-        border-radius: 12px;
-        border: 1px solid #2f4684;
-      }
-      .two-col {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        overflow: hidden;
-        border-radius: 10px;
-      }
-      th, td {
-        border-bottom: 1px solid #27396e;
-        text-align: left;
-        padding: 10px;
-      }
-      th { color: #dce6ff; }
-      td { color: var(--muted); }
-      code.block {
-        display: block;
-        padding: 14px;
-        border-radius: 10px;
-        white-space: pre;
-        background: #0a1227;
-        border: 1px solid #27396e;
-        color: #c7d5ff;
-        overflow-x: auto;
-      }
-      footer {
-        text-align: center;
-        color: #8fa2d9;
-        margin: 16px 0 8px;
-        font-size: 0.92rem;
-      }
-      @media (min-width: 900px) {
-        .half { grid-column: span 6; }
-        .third { grid-column: span 4; }
-        .two-col { grid-template-columns: 1fr 1fr; }
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Shashi Pal</a>
+        <div class="nav-links">
+          <a href="index.html" data-nav>Home</a>
+          <a href="about.html" data-nav>About</a>
+          <a href="projects.html" data-nav>Projects</a>
+          <a href="experience.html" data-nav>Experience</a>
+          <a href="contact.html" data-nav>Contact</a>
+        </div>
+      </nav>
+    </header>
+
     <main class="container">
       <section class="hero">
         <div class="hero-head">
           <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" />
-          <h1>🚀 Shashi Pal — DevOps & Platform Engineer</h1>
+          <div>
+            <h1>Shashi Pal — DevOps & Platform Engineer</h1>
+            <p>Designing resilient cloud platforms and automation-first delivery systems.</p>
+          </div>
         </div>
-        <p>16+ years building scalable, resilient, production-grade cloud platforms.</p>
-        <img class="banner" src="./assets/ezgif.com-optimize.gif" alt="DevOps animation" />
-        <div class="cta">
-          <a href="https://github.com/devopsgeek1979" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/shashi-pal1979/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/devopsgeek1979/devopsgeek1979" target="_blank" rel="noopener noreferrer">Profile Repo</a>
+        <div class="button-row">
+          <a class="button" href="projects.html">View Projects</a>
+          <a class="button" href="contact.html">Work With Me</a>
         </div>
       </section>
 
       <section class="grid">
         <article class="card half">
-          <h2>🧠 About Me</h2>
-          <p>I design and operate cloud-native infrastructure focused on automation, reliability, and security.</p>
+          <h2>Professional Summary</h2>
+          <p>
+            16+ years of hands-on experience delivering scalable infrastructure, Kubernetes platforms,
+            CI/CD pipelines, and production reliability improvements across cloud-native environments.
+          </p>
           <div class="chips">
             <span class="chip">AWS</span>
             <span class="chip">Azure</span>
@@ -200,83 +57,61 @@
         </article>
 
         <article class="card half">
-          <h2>🧭 DevOps Philosophy</h2>
-          <p><strong>Design → Automate → Scale → Observe → Optimize</strong></p>
-          <img src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" class="philosophy-image" />
-        </article>
-
-        <article class="card">
-          <h2>📊 GitHub Intelligence</h2>
-          <div class="stats">
-            <img src="https://github-readme-stats.vercel.app/api?username=devopsgeek1979&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="170" alt="GitHub stats" />
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=devopsgeek1979&theme=tokyonight&hide_border=true" height="170" alt="GitHub streak" />
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devopsgeek1979&layout=compact&theme=tokyonight&hide_border=true" height="170" alt="Top languages" />
+          <h2>Career Highlights</h2>
+          <div class="kpi">
+            <div class="item">
+              <strong>16+ Years</strong>
+              <span>DevOps and platform engineering experience</span>
+            </div>
+            <div class="item">
+              <strong>99.95%</strong>
+              <span>High-availability target in production stacks</span>
+            </div>
+            <div class="item">
+              <strong>40% Faster</strong>
+              <span>Deployment cycle reduction through CI/CD automation</span>
+            </div>
+            <div class="item">
+              <strong>24x7</strong>
+              <span>Operational ownership with observability-led incident response</span>
+            </div>
           </div>
         </article>
 
-        <article class="card half">
-          <h2>🏗️ Architecture Mindset</h2>
-          <code class="block">          ┌───────────────┐
-          │   Users       │
-          └──────┬────────┘
-                 │
-        ┌────────▼────────┐
-        │  Load Balancer  │
-        └────────┬────────┘
-                 │
-     ┌───────────▼───────────┐
-     │   Kubernetes Cluster  │
-     └───────────┬───────────┘
-                 │
-     ┌───────────▼───────────┐
-     │  HA Database Cluster  │
-     │ (Postgres + Patroni)  │
-     └───────────────────────┘</code>
-        </article>
-
-        <article class="card half">
-          <h2>💼 Featured Work</h2>
-          <table>
-            <thead>
-              <tr><th>Project</th><th>Description</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>🚀 DevOps Job Automation Platform</td><td>AI-powered job automation workflows</td></tr>
-              <tr><td>☁️ Terraform Multi-Cloud</td><td>AWS + Azure infrastructure as code</td></tr>
-              <tr><td>🗄️ PostgreSQL HA Cluster</td><td>Patroni-based auto failover architecture</td></tr>
-              <tr><td>📊 Monitoring Stack</td><td>Grafana + Prometheus + PMM observability</td></tr>
-            </tbody>
-          </table>
-        </article>
-
         <article class="card third">
-          <h2>🎯 What Sets Me Apart</h2>
-          <ul>
-            <li>Zero-downtime architecture design</li>
-            <li>Automation-first delivery culture</li>
-            <li>Scalable self-healing infrastructure</li>
-            <li>Strong production incident debugging</li>
+          <h2>What I Build</h2>
+          <ul class="list-clean">
+            <li>Cloud-native platforms for scale and resilience</li>
+            <li>Infrastructure as code and policy-driven automation</li>
+            <li>Secure delivery pipelines with quality gates</li>
+            <li>Observability-first production operations</li>
           </ul>
         </article>
 
         <article class="card third">
-          <h2>📈 Current Focus</h2>
-          <ul>
+          <h2>Current Focus</h2>
+          <ul class="list-clean">
             <li>Advanced Kubernetes operations</li>
             <li>Multi-cloud platform engineering</li>
-            <li>Internal developer platforms</li>
-            <li>Observability and optimization</li>
+            <li>Platform developer experience</li>
+            <li>Cost and performance optimization</li>
           </ul>
         </article>
 
         <article class="card third">
-          <h2>⚡ DevOps Creed</h2>
-          <p>“Infrastructure should be invisible when working and transparent when failing.”</p>
-          <h2>🧩 Fun Fact</h2>
-          <p>I trust YAML more than docs, logs more than assumptions, and automation more than humans.</p>
+          <h2>Quick Links</h2>
+          <ul class="list-clean">
+            <li><a href="https://github.com/devopsgeek1979" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/shashi-pal1979/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="projects.html">Featured projects</a></li>
+            <li><a href="contact.html">Contact and availability</a></li>
+          </ul>
         </article>
       </section>
+
+      <footer class="footer">© 2026 Shashi Pal · DevOps & Platform Engineering</footer>
     </main>
-    <footer>© 2026 Shashi Pal · DevOps & Platform Engineering</footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
