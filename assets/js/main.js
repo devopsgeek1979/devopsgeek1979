@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Initialise Lucide icons
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
+  // Active nav highlighting
   const path = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('[data-nav]');
 

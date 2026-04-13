@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   --bg: #060b1a;
   --panel: #0f1833;
@@ -12,8 +14,6 @@
   --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
   --transition: 0.18s ease;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -463,6 +463,232 @@ a {
   flex-shrink: 0;
 }
 
+/* ── Lucide icon inline sizing ────────────────────────────── */
+.lucide {
+  width: 16px;
+  height: 16px;
+  stroke-width: 2;
+  vertical-align: -3px;
+  flex-shrink: 0;
+}
+
+.lucide-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.nav-links a svg.lucide {
+  margin-right: 4px;
+  opacity: 0.75;
+  transition: opacity var(--transition);
+}
+
+.nav-links a:hover svg.lucide,
+.nav-links a.active svg.lucide {
+  opacity: 1;
+}
+
+.card h2 svg.lucide {
+  margin-right: 6px;
+  color: var(--accent-2);
+}
+
+/* ── Repo card grid ───────────────────────────────────────── */
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.repo-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #0c1530;
+  padding: 16px 18px;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+
+.repo-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(74, 215, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.repo-card .repo-name {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.repo-card .repo-desc {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.repo-card .repo-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #6b80b8;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+
+.repo-card .repo-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.repo-lang-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+#repos-loading {
+  text-align: center;
+  color: var(--muted);
+  padding: 32px;
+  font-size: 0.95rem;
+}
+
+/* ── Contact form ─────────────────────────────────────────── */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  background: #0c1530;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.93rem;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(74, 215, 255, 0.12);
+}
+
+.form-group select option {
+  background: #0c1530;
+}
+
+/* ── Contact page specifics ───────────────────────────────── */
+.contact-channel {
+  cursor: default;
+  margin-bottom: 0;
+}
+
+.contact-channel-link {
+  margin-bottom: 0;
+}
+
+.contact-email-anchor {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact-email-label {
+  font-weight: 700;
+}
+
+.contact-form-intro {
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-size: 0.92rem;
+}
+
+.contact-sidebar {
+  align-self: start;
+}
+
+.contact-availability {
+  margin-top: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.contact-availability-icon {
+  color: var(--ok);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-availability-ok {
+  color: var(--ok);
+}
+
+.contact-help-heading {
+  margin-top: 20px;
+}
+
+.contact-help-list {
+  color: var(--muted);
+  line-height: 2;
+}
+
+.contact-help-icon {
+  color: var(--accent-2);
+}
+
+.contact-sidebar-buttons {
+  margin-top: 20px;
+}
+
+.contact-form-submit {
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-send-heading {
+  margin-top: 0;
+}
+
+/* ── Page-header label ────────────────────────────────────── */
 .page-header {
   margin: 0 0 4px;
   color: var(--muted);

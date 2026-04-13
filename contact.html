@@ -6,17 +6,19 @@
     <meta name="description" content="Contact Shashi Pal for DevOps and platform engineering opportunities" />
     <title>Contact | Shashi Pal</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
         <a class="brand" href="index.html">Shashi Pal</a>
         <div class="nav-links">
-          <a href="index.html" data-nav>Home</a>
-          <a href="about.html" data-nav>About</a>
-          <a href="projects.html" data-nav>Projects</a>
-          <a href="experience.html" data-nav>Experience</a>
-          <a href="contact.html" data-nav>Contact</a>
+          <a href="index.html" data-nav><i data-lucide="house" class="lucide"></i>Home</a>
+          <a href="about.html" data-nav><i data-lucide="user" class="lucide"></i>About</a>
+          <a href="projects.html" data-nav><i data-lucide="layout-grid" class="lucide"></i>Projects</a>
+          <a href="experience.html" data-nav><i data-lucide="briefcase" class="lucide"></i>Experience</a>
+          <a href="repos.html" data-nav><i data-lucide="git-branch" class="lucide"></i>Repos</a>
+          <a href="contact.html" data-nav><i data-lucide="mail" class="lucide"></i>Contact</a>
         </div>
       </nav>
     </header>
@@ -26,48 +28,108 @@
         <div class="hero-head">
           <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" />
           <div>
-            <h1>Contact</h1>
-            <p>Open to consulting, platform transformation, and senior DevOps opportunities.</p>
+            <h1>Let's Work Together</h1>
+            <p>Available for consulting, platform transformation, and senior DevOps engagements.</p>
           </div>
         </div>
       </section>
 
+      <!-- Quick-reach channels -->
       <section class="grid">
-        <article class="card half">
-          <h2>Let’s Connect</h2>
-          <a class="contact-link" href="mailto:shashi.pal1979@gmail.com">
-            <div class="icon">✉️</div>
+        <article class="card third">
+          <div class="contact-link contact-channel">
+            <div class="icon"><i data-lucide="mail" class="lucide lucide-lg"></i></div>
             <div>
-              <div>Email</div>
-              <div class="sub">shashi.pal1979@gmail.com</div>
+              <div class="contact-email-label">Email</div>
+              <a class="sub contact-email-anchor" href="mailto:shashi.pal1979@gmail.com">shashi.pal1979@gmail.com</a>
             </div>
-          </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/shashi-pal1979/" target="_blank" rel="noopener noreferrer">
-            <div class="icon">💼</div>
+          </div>
+        </article>
+
+        <article class="card third">
+          <a class="contact-link contact-channel-link" href="https://www.linkedin.com/in/shashi-pal1979/" target="_blank" rel="noopener noreferrer">
+            <div class="icon"><i data-lucide="linkedin" class="lucide lucide-lg"></i></div>
             <div>
               <div>LinkedIn</div>
-              <div class="sub">linkedin.com/in/shashi-pal1979</div>
-            </div>
-          </a>
-          <a class="contact-link" href="https://github.com/devopsgeek1979" target="_blank" rel="noopener noreferrer">
-            <div class="icon">🐙</div>
-            <div>
-              <div>GitHub</div>
-              <div class="sub">github.com/devopsgeek1979</div>
+              <div class="sub">shashi-pal1979</div>
             </div>
           </a>
         </article>
 
+        <article class="card third">
+          <a class="contact-link contact-channel-link" href="https://github.com/devopsgeek1979" target="_blank" rel="noopener noreferrer">
+            <div class="icon"><i data-lucide="github" class="lucide lucide-lg"></i></div>
+            <div>
+              <div>GitHub</div>
+              <div class="sub">devopsgeek1979</div>
+            </div>
+          </a>
+        </article>
+      </section>
+
+      <!-- Main contact grid: form + sidebar -->
+      <section class="grid">
         <article class="card half">
-          <h2>Availability</h2>
-          <div class="notice">
-            Currently available for architecture reviews, cloud migrations,
-            reliability initiatives, and senior DevOps platform engagements.
+          <h2><i data-lucide="send" class="lucide lucide-lg"></i>Send a Message</h2>
+          <p class="contact-form-intro">
+            Tell me about your project, team size, and timeline — I'll get back to you within 48 hours.
+          </p>
+          <form class="contact-form" action="mailto:shashi.pal1979@gmail.com" method="GET" enctype="text/plain">
+            <div class="form-group">
+              <label for="cnt-name"><i data-lucide="user" class="lucide"></i> Name</label>
+              <input type="text" id="cnt-name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="cnt-email"><i data-lucide="at-sign" class="lucide"></i> Email</label>
+              <input type="email" id="cnt-email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cnt-topic"><i data-lucide="tag" class="lucide"></i> Engagement Type</label>
+              <select id="cnt-topic" name="topic">
+                <option value="">Select one…</option>
+                <option>Cloud Architecture Review</option>
+                <option>Kubernetes Platform Engineering</option>
+                <option>CI/CD Pipeline Modernisation</option>
+                <option>DevOps Transformation</option>
+                <option>IaC &amp; Terraform Consulting</option>
+                <option>SRE / Reliability Improvement</option>
+                <option>Full-time / Contract Role</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cnt-message"><i data-lucide="message-square" class="lucide"></i> Message</label>
+              <textarea id="cnt-message" name="body" rows="5" placeholder="Describe your project, current stack, timeline…"></textarea>
+            </div>
+            <div class="button-row">
+              <button type="submit" class="button contact-form-submit">
+                <i data-lucide="send" class="lucide"></i> Send Message
+              </button>
+            </div>
+          </form>
+        </article>
+
+        <article class="card half contact-sidebar">
+          <h2><i data-lucide="calendar-check" class="lucide lucide-lg"></i>Availability</h2>
+          <div class="notice contact-availability">
+            <i data-lucide="circle-check" class="lucide contact-availability-icon"></i>
+            <span><strong class="contact-availability-ok">Currently available</strong> for architecture reviews,
+            cloud migrations, reliability initiatives, and senior DevOps platform engagements.</span>
           </div>
-          <p>Include your project context, current stack, and timeline for a faster response.</p>
-          <div class="button-row">
-            <a class="button" href="mailto:shashi.pal1979@gmail.com">Send Email</a>
-            <a class="button outline" href="experience.html">View Experience</a>
+
+          <h2 class="contact-help-heading"><i data-lucide="list-checks" class="lucide lucide-lg"></i>What I Can Help With</h2>
+          <ul class="list-clean contact-help-list">
+            <li><i data-lucide="cloud" class="lucide contact-help-icon"></i> Multi-cloud platform design (AWS, Azure)</li>
+            <li><i data-lucide="box" class="lucide contact-help-icon"></i> Kubernetes cluster operations &amp; cost optimisation</li>
+            <li><i data-lucide="git-merge" class="lucide contact-help-icon"></i> GitOps, CI/CD pipeline engineering</li>
+            <li><i data-lucide="activity" class="lucide contact-help-icon"></i> Observability, alerting &amp; incident response</li>
+            <li><i data-lucide="lock" class="lucide contact-help-icon"></i> Security hardening &amp; compliance automation</li>
+            <li><i data-lucide="database" class="lucide contact-help-icon"></i> PostgreSQL HA, Patroni, PgBouncer</li>
+          </ul>
+
+          <div class="button-row contact-sidebar-buttons">
+            <a class="button outline" href="experience.html"><i data-lucide="briefcase" class="lucide"></i> Experience</a>
+            <a class="button outline" href="projects.html"><i data-lucide="layout-grid" class="lucide"></i> Projects</a>
           </div>
         </article>
       </section>
