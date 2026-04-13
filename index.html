@@ -40,6 +40,20 @@
         margin: 0 0 8px;
         font-size: clamp(1.6rem, 2vw + 1rem, 2.5rem);
       }
+      .hero-head {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+      }
+      .profile-photo {
+        width: 78px;
+        height: 78px;
+        border-radius: 50%;
+        border: 2px solid var(--accent);
+        object-fit: cover;
+      }
       .hero p {
         color: var(--muted);
         margin: 8px 0 18px;
@@ -155,7 +169,10 @@
   <body>
     <main class="container">
       <section class="hero">
-        <h1>🚀 Shashi Pal — DevOps & Platform Engineer</h1>
+        <div class="hero-head">
+          <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" />
+          <h1>🚀 Shashi Pal — DevOps & Platform Engineer</h1>
+        </div>
         <p>16+ years building scalable, resilient, production-grade cloud platforms.</p>
         <img class="banner" src="./assets/ezgif.com-optimize.gif" alt="DevOps animation" />
         <div class="cta">
@@ -185,7 +202,7 @@
         <article class="card half">
           <h2>🧭 DevOps Philosophy</h2>
           <p><strong>Design → Automate → Scale → Observe → Optimize</strong></p>
-          <img src="./assets/Shashi.png" alt="DevOps philosophy" class="philosophy-image" />
+          <img src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" class="philosophy-image" />
         </article>
 
         <article class="card">

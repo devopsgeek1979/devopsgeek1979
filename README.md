@@ -18,6 +18,10 @@
   <strong>🌐 Prefer a website view? Visit: <a href="https://devopsgeek1979.github.io/devopsgeek1979/">devopsgeek1979.github.io/devopsgeek1979</a></strong>
 </p>
 
+<p align="center">
+  <img src="https://github.com/devopsgeek1979.png" alt="Shashi Pal Profile Photo" width="140" style="border-radius: 50%;" />
+</p>
+
 ---
 
 ## 👋 About Me
@@ -41,7 +45,7 @@ I build production-grade systems that are scalable, secure, observable, and resi
 ## 🧭 DevOps Philosophy
 
 <p align="center">
-  <img src="./assets/Shashi.png" alt="DevOps Philosophy" width="85%" />
+  <img src="https://github.com/devopsgeek1979.png" alt="Shashi Pal Profile Photo" width="220" />
 </p>
 
 <p align="center">
