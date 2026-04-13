@@ -573,50 +573,164 @@ a {
 }
 
 /* ── Contact form ─────────────────────────────────────────── */
+/* ── Modern floating-label contact form ──────────────────── */
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 24px;
 }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
+.form-card {
+  background: rgba(15, 24, 51, 0.72);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(74, 215, 255, 0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 
-.form-group label {
-  font-size: 0.83rem;
-  font-weight: 600;
-  color: var(--muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+/* Floating label wrapper */
+.field-float {
+  position: relative;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
-  background: #0c1530;
-  border: 1px solid var(--border);
-  border-radius: 9px;
+/* Shared input / textarea / select reset */
+.field-float input,
+.field-float textarea,
+.field-float select {
+  width: 100%;
+  background: rgba(6, 11, 26, 0.6);
+  border: none;
+  border-bottom: 2px solid var(--border);
+  border-radius: 10px 10px 0 0;
   color: var(--text);
   font-family: inherit;
-  font-size: 0.93rem;
-  padding: 10px 14px;
+  font-size: 0.97rem;
+  padding: 24px 14px 8px;
   outline: none;
-  transition: border-color var(--transition), box-shadow var(--transition);
   resize: vertical;
+  transition: border-bottom-color var(--transition),
+              background var(--transition),
+              box-shadow var(--transition);
 }
 
-.form-group input:focus,
-.form-group textarea:focus,
-.form-group select:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(74, 215, 255, 0.12);
+/* Accent underline on focus */
+.field-float input:focus,
+.field-float textarea:focus,
+.field-float select:focus {
+  border-bottom-color: var(--accent);
+  background: rgba(19, 33, 69, 0.75);
+  box-shadow: 0 4px 20px rgba(74, 215, 255, 0.09);
 }
 
-.form-group select option {
+/* Animated bottom bar (accent line) */
+.field-bar {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border-radius: 0 0 2px 2px;
+  transition: width 0.22s ease, left 0.22s ease;
+  pointer-events: none;
+}
+
+.field-float input:focus ~ .field-bar,
+.field-float textarea:focus ~ .field-bar,
+.field-float select:focus ~ .field-bar {
+  width: 100%;
+  left: 0;
+}
+
+/* Floating label */
+.field-float label {
+  position: absolute;
+  left: 14px;
+  top: 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+  pointer-events: none;
+  transition: top 0.18s ease, font-size 0.18s ease, color 0.18s ease;
+}
+
+.field-float input:focus ~ label,
+.field-float input:not(:placeholder-shown) ~ label,
+.field-float textarea:focus ~ label,
+.field-float textarea:not(:placeholder-shown) ~ label {
+  top: 6px;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+/* Select: always show floated label (select has a value) */
+.field-select label {
+  top: 6px;
+  font-size: 0.72rem;
+  color: var(--accent);
+}
+
+.field-float select option {
   background: #0c1530;
+  color: var(--text);
+}
+
+/* Character counter */
+.char-counter {
+  font-size: 0.76rem;
+  color: var(--muted);
+  text-align: right;
+  margin-top: 4px;
+  padding-right: 2px;
+}
+
+/* Send button — gradient glow */
+.send-btn {
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  border: none !important;
+  border-radius: 12px;
+  color: #05101f !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 13px 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 22px rgba(74, 215, 255, 0.28);
+  transition: transform var(--transition), box-shadow var(--transition);
+  align-self: flex-start;
+}
+
+.send-btn:hover,
+.send-btn:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(74, 215, 255, 0.45);
+}
+
+/* Success banner */
+.form-success {
+  text-align: center;
+  padding: 28px 20px 20px;
+  border-radius: 12px;
+  background: rgba(57, 217, 138, 0.08);
+  border: 1px solid rgba(57, 217, 138, 0.3);
+  color: var(--ok);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  animation: fadeSlideIn 0.4s ease;
+}
+
+.form-success-icon {
+  display: block;
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* ── Contact page specifics ───────────────────────────────── */

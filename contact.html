@@ -28,7 +28,7 @@
         <div class="hero-head">
           <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" />
           <div>
-            <h1>Let's Work Together</h1>
+            <h1>📬 Let's Work Together</h1>
             <p>Available for consulting, platform transformation, and senior DevOps engagements.</p>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div class="contact-link contact-channel">
             <div class="icon"><i data-lucide="mail" class="lucide lucide-lg"></i></div>
             <div>
-              <div class="contact-email-label">Email</div>
+              <div class="contact-email-label">📧 Email</div>
               <a class="sub contact-email-anchor" href="mailto:shashi.pal1979@gmail.com">shashi.pal1979@gmail.com</a>
             </div>
           </div>
@@ -50,7 +50,7 @@
           <a class="contact-link contact-channel-link" href="https://www.linkedin.com/in/shashi-pal1979/" target="_blank" rel="noopener noreferrer">
             <div class="icon"><i data-lucide="linkedin" class="lucide lucide-lg"></i></div>
             <div>
-              <div>LinkedIn</div>
+              <div>💼 LinkedIn</div>
               <div class="sub">shashi-pal1979</div>
             </div>
           </a>
@@ -60,7 +60,7 @@
           <a class="contact-link contact-channel-link" href="https://github.com/devopsgeek1979" target="_blank" rel="noopener noreferrer">
             <div class="icon"><i data-lucide="github" class="lucide lucide-lg"></i></div>
             <div>
-              <div>GitHub</div>
+              <div>🐚 GitHub</div>
               <div class="sub">devopsgeek1979</div>
             </div>
           </a>
@@ -69,74 +69,100 @@
 
       <!-- Main contact grid: form + sidebar -->
       <section class="grid">
-        <article class="card half">
-          <h2><i data-lucide="send" class="lucide lucide-lg"></i>Send a Message</h2>
+        <article class="card half form-card">
+          <h2><i data-lucide="send" class="lucide lucide-lg"></i>💬 Send a Message</h2>
           <p class="contact-form-intro">
-            Tell me about your project, team size, and timeline — I'll get back to you within 48 hours.
+            Tell me about your project, team size, and timeline — I’ll get back to you within 48&nbsp;hours.
           </p>
-          <form class="contact-form" action="mailto:shashi.pal1979@gmail.com" method="GET" enctype="text/plain">
-            <div class="form-group">
-              <label for="cnt-name"><i data-lucide="user" class="lucide"></i> Name</label>
-              <input type="text" id="cnt-name" name="name" placeholder="Your full name" required />
+
+          <div id="form-success" class="form-success" hidden>
+            <span class="form-success-icon">🎉</span>
+            <strong>Message sent!</strong> I’ll reply within 48 hours.
+          </div>
+
+          <form class="contact-form modern-form" id="contact-form" action="mailto:shashi.pal1979@gmail.com" method="GET" enctype="text/plain">
+            <div class="field-float">
+              <input type="text" id="cnt-name" name="name" placeholder=" " required autocomplete="name" />
+              <label for="cnt-name">👤 Full Name</label>
+              <span class="field-bar"></span>
             </div>
-            <div class="form-group">
-              <label for="cnt-email"><i data-lucide="at-sign" class="lucide"></i> Email</label>
-              <input type="email" id="cnt-email" name="email" placeholder="you@company.com" required />
+            <div class="field-float">
+              <input type="email" id="cnt-email" name="email" placeholder=" " required autocomplete="email" />
+              <label for="cnt-email">📧 Work Email</label>
+              <span class="field-bar"></span>
             </div>
-            <div class="form-group">
-              <label for="cnt-topic"><i data-lucide="tag" class="lucide"></i> Engagement Type</label>
-              <select id="cnt-topic" name="topic">
-                <option value="">Select one…</option>
-                <option>Cloud Architecture Review</option>
-                <option>Kubernetes Platform Engineering</option>
-                <option>CI/CD Pipeline Modernisation</option>
-                <option>DevOps Transformation</option>
-                <option>IaC &amp; Terraform Consulting</option>
-                <option>SRE / Reliability Improvement</option>
-                <option>Full-time / Contract Role</option>
-                <option>Other</option>
+            <div class="field-float field-select">
+              <select id="cnt-topic" name="topic" required>
+                <option value="" disabled selected></option>
+                <option value="Cloud Architecture Review">🏗️ Cloud Architecture Review</option>
+                <option value="Kubernetes Platform Engineering">⎈ Kubernetes Platform Engineering</option>
+                <option value="CI/CD Pipeline Modernisation">🔄 CI/CD Pipeline Modernisation</option>
+                <option value="DevOps Transformation">⚡ DevOps Transformation</option>
+                <option value="IaC &amp; Terraform Consulting">🧱 IaC &amp; Terraform Consulting</option>
+                <option value="SRE / Reliability Improvement">🛡️ SRE / Reliability Improvement</option>
+                <option value="Full-time / Contract Role">💼 Full-time / Contract Role</option>
+                <option value="Other">💬 Other</option>
               </select>
+              <label for="cnt-topic">🏷️ Engagement Type</label>
+              <span class="field-bar"></span>
             </div>
-            <div class="form-group">
-              <label for="cnt-message"><i data-lucide="message-square" class="lucide"></i> Message</label>
-              <textarea id="cnt-message" name="body" rows="5" placeholder="Describe your project, current stack, timeline…"></textarea>
+            <div class="field-float field-textarea">
+              <textarea id="cnt-message" name="body" placeholder=" " rows="5" maxlength="800" required></textarea>
+              <label for="cnt-message">📝 Your Message</label>
+              <span class="field-bar"></span>
+              <div class="char-counter"><span id="char-count">0</span>&nbsp;/ 800</div>
             </div>
-            <div class="button-row">
-              <button type="submit" class="button contact-form-submit">
-                <i data-lucide="send" class="lucide"></i> Send Message
-              </button>
-            </div>
+            <button type="submit" class="button contact-form-submit send-btn">
+              <i data-lucide="send" class="lucide"></i> Send Message 🚀
+            </button>
           </form>
         </article>
 
         <article class="card half contact-sidebar">
-          <h2><i data-lucide="calendar-check" class="lucide lucide-lg"></i>Availability</h2>
+          <h2><i data-lucide="calendar-check" class="lucide lucide-lg"></i>📅 Availability</h2>
           <div class="notice contact-availability">
             <i data-lucide="circle-check" class="lucide contact-availability-icon"></i>
-            <span><strong class="contact-availability-ok">Currently available</strong> for architecture reviews,
+            <span><strong class="contact-availability-ok">✅ Currently available</strong> for architecture reviews,
             cloud migrations, reliability initiatives, and senior DevOps platform engagements.</span>
           </div>
 
-          <h2 class="contact-help-heading"><i data-lucide="list-checks" class="lucide lucide-lg"></i>What I Can Help With</h2>
+          <h2 class="contact-help-heading"><i data-lucide="list-checks" class="lucide lucide-lg"></i>What I Can Help With 🧰</h2>
           <ul class="list-clean contact-help-list">
-            <li><i data-lucide="cloud" class="lucide contact-help-icon"></i> Multi-cloud platform design (AWS, Azure)</li>
-            <li><i data-lucide="box" class="lucide contact-help-icon"></i> Kubernetes cluster operations &amp; cost optimisation</li>
-            <li><i data-lucide="git-merge" class="lucide contact-help-icon"></i> GitOps, CI/CD pipeline engineering</li>
-            <li><i data-lucide="activity" class="lucide contact-help-icon"></i> Observability, alerting &amp; incident response</li>
-            <li><i data-lucide="lock" class="lucide contact-help-icon"></i> Security hardening &amp; compliance automation</li>
-            <li><i data-lucide="database" class="lucide contact-help-icon"></i> PostgreSQL HA, Patroni, PgBouncer</li>
+            <li><i data-lucide="cloud" class="lucide contact-help-icon"></i> ☁️ Multi-cloud platform design (AWS, Azure)</li>
+            <li><i data-lucide="box" class="lucide contact-help-icon"></i> ⎈ Kubernetes cluster operations &amp; cost optimisation</li>
+            <li><i data-lucide="git-merge" class="lucide contact-help-icon"></i> 🔄 GitOps, CI/CD pipeline engineering</li>
+            <li><i data-lucide="activity" class="lucide contact-help-icon"></i> 📊 Observability, alerting &amp; incident response</li>
+            <li><i data-lucide="lock" class="lucide contact-help-icon"></i> 🔒 Security hardening &amp; compliance automation</li>
+            <li><i data-lucide="database" class="lucide contact-help-icon"></i> 🗄️ PostgreSQL HA, Patroni, PgBouncer</li>
           </ul>
 
           <div class="button-row contact-sidebar-buttons">
-            <a class="button outline" href="experience.html"><i data-lucide="briefcase" class="lucide"></i> Experience</a>
-            <a class="button outline" href="projects.html"><i data-lucide="layout-grid" class="lucide"></i> Projects</a>
+            <a class="button outline" href="experience.html"><i data-lucide="briefcase" class="lucide"></i> 💼 Experience</a>
+            <a class="button outline" href="projects.html"><i data-lucide="layout-grid" class="lucide"></i> 🗂️ Projects</a>
           </div>
         </article>
       </section>
 
-      <footer class="footer">© 2026 Shashi Pal · DevOps & Platform Engineering</footer>
+      <footer class="footer">© 2026 Shashi Pal · DevOps & Platform Engineering 🚀</footer>
     </main>
 
     <script src="assets/js/main.js"></script>
+    <script>
+      // Character counter
+      const msg = document.getElementById('cnt-message');
+      const counter = document.getElementById('char-count');
+      if (msg && counter) {
+        msg.addEventListener('input', () => { counter.textContent = msg.value.length; });
+      }
+      // Success banner on submit
+      const form = document.getElementById('contact-form');
+      const success = document.getElementById('form-success');
+      if (form && success) {
+        form.addEventListener('submit', (e) => {
+          success.hidden = false;
+          success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        });
+      }
+    </script>
   </body>
 </html>
