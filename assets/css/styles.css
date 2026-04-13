@@ -405,17 +405,23 @@ a {
 }
 
 .stats-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 12px;
-  align-items: flex-start;
+  align-items: start;
 }
 
 .stats-grid img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 12px;
   border: 1px solid #2f4684;
-  flex: 1 1 280px;
+  display: block;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.stats-grid img:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(74, 215, 255, 0.15);
 }
 
 .section-intro {
