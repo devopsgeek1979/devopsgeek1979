@@ -442,6 +442,33 @@ p{margin:0}
 }
 .footer-links a{font-size:.8rem;color:var(--muted-2);transition:color var(--transition)}
 .footer-links a:hover{color:var(--accent)}
+.footer-profile-card{
+  margin:12px auto 4px;
+  width:min(100%,540px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:14px 16px;
+  border:1px solid rgba(83,216,255,.2);
+  border-radius:var(--radius);
+  background:linear-gradient(180deg,rgba(83,216,255,.08),rgba(83,216,255,.03));
+  box-shadow:0 10px 24px rgba(0,0,0,.22);
+}
+.footer-profile-icon-wrap{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  border:1px solid rgba(83,216,255,.28);
+  background:rgba(83,216,255,.1);
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+}
+.footer-profile-icon{width:16px;height:16px;color:var(--accent)}
+.footer-profile-content{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center}
+.footer-profile-title{margin:0;font-size:.8rem;font-weight:700;color:#dff8ff;letter-spacing:.2px}
+.footer-profile-card img{height:28px;width:auto;display:block}
 .footer{text-align:center;padding:16px 0 28px;font-size:.8rem;color:var(--muted-2);position:relative}
 .footer::before{content:'';display:block;width:120px;height:1px;margin:0 auto 16px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.6}
 
@@ -485,6 +512,8 @@ p{margin:0}
   .contact-form input,.contact-form textarea,.contact-form select{font-size:16px}
   .brand-card{padding:20px 14px 18px}
   .footer-links{gap:10px 14px}
+  .footer-profile-card{padding:12px 10px;gap:8px}
+  .footer-profile-title{width:100%;text-align:center}
 }
 @media(max-width:420px){
   .container{padding:18px 12px 30px}
