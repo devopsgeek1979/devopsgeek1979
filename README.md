@@ -9,6 +9,10 @@
 </p>
 
 <p align="center">
+  <strong>Openshift/OpenShift • Kubernetes • Linux • Ansible • Grafana • Azure,AWS,GCP • PYTHON</strong>
+</p>
+
+<p align="center">
   <a href="https://github.com/devopsgeek1979"><img src="https://img.shields.io/badge/GitHub-devopsgeek1979-black?style=for-the-badge&logo=github"/></a>
   <a href="https://www.linkedin.com/in/shashi-pal1979/"><img src="https://img.shields.io/badge/LinkedIn-Shashi%20Pal-blue?style=for-the-badge&logo=linkedin"/></a>
   <a href="https://devopsgeek1979.github.io/devopsgeek1979/"><img src="https://img.shields.io/badge/Portfolio-Live%20Website-0ea5e9?style=for-the-badge&logo=google-chrome&logoColor=white"/></a>
@@ -27,14 +31,17 @@ name: Shashi Pal
 role: Senior DevOps Engineer | Platform Engineer
 experience: 16+ years
 focus:
-  - Cloud Architecture (AWS, Azure)
-  - Kubernetes & Container Platforms
+  - Cloud Architecture (Azure, AWS, GCP)
+  - OpenShift & Kubernetes Platforms on Linux
   - Infrastructure as Code (Terraform, Ansible)
+  - Automation using PYTHON and modern CI/CD
   - CI/CD & Release Automation
   - Observability and Reliability Engineering
 ```
 
 I build production-grade systems that are scalable, secure, observable, and resilient by design.
+
+I help teams ship faster with reliable platforms, clear engineering standards, and automation that turns complexity into confidence.
 
 ---
 
@@ -74,18 +81,19 @@ I build production-grade systems that are scalable, secure, observable, and resi
 ## 🏗️ What I Build
 
 - **Cloud-native platforms** with automated provisioning and policy-driven controls
-- **Kubernetes production stacks** with observability, security, and cost visibility
+- **OpenShift and Kubernetes production stacks** with observability, security, and cost visibility
+- **Linux-first automation workflows** powered by Ansible and PYTHON
 - **Zero-touch CI/CD pipelines** for faster and safer software delivery
-- **Self-healing infrastructure** with alerting and automated remediation
+- **Self-healing infrastructure** with Grafana-led observability and automated remediation
 
 ---
 
 ## 🎯 Current Focus
 
-- Advanced Kubernetes operations and cluster reliability
-- Multi-cloud platform architecture (AWS + Azure)
+- Advanced OpenShift and Kubernetes operations for cluster reliability
+- Multi-cloud platform architecture (Azure + AWS + GCP)
 - Platform Engineering and Internal Developer Platforms
-- Observability and performance optimization at scale
+- Observability and performance optimization at scale with Grafana
 
 ---
 
