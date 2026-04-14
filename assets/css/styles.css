@@ -864,6 +864,35 @@ a {
   padding-top: 18px;
 }
 
+.footer-links {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.footer-links a {
+  color: #dbe7ff;
+  text-decoration: none;
+  font-size: 0.86rem;
+  font-weight: 600;
+  border: 1px solid rgba(83, 216, 255, 0.24);
+  background: rgba(11, 21, 46, 0.65);
+  padding: 5px 11px;
+  border-radius: 999px;
+  transition: color var(--transition), border-color var(--transition), background var(--transition), transform var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(83, 216, 255, 0.08);
+  transform: translateY(-1px);
+}
+
 .notice {
   border: 1px dashed #4860a4;
   background: #0b1330;

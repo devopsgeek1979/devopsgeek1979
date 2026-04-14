@@ -4,11 +4,12 @@ Professional multi-page portfolio on GitHub Pages.
 
 ## Live Site
 
-- Home: `index.html`
-- About: `about.html`
-- Projects: `projects.html`
-- Experience: `experience.html`
-- Contact: `contact.html`
+- Home: [index.html](https://devopsgeek1979.github.io/devopsgeek1979/index.html)
+- About: [about.html](https://devopsgeek1979.github.io/devopsgeek1979/about.html)
+- Projects: [projects.html](https://devopsgeek1979.github.io/devopsgeek1979/projects.html)
+- Experience: [experience.html](https://devopsgeek1979.github.io/devopsgeek1979/experience.html)
+- Repos: [repos.html](https://devopsgeek1979.github.io/devopsgeek1979/repos.html)
+- Contact: [contact.html](https://devopsgeek1979.github.io/devopsgeek1979/contact.html)
 
 Public URL:
 
