@@ -333,6 +333,19 @@ p{margin:0}
   background:rgba(139,146,255,.1);border:1px solid rgba(139,146,255,.2);
   color:var(--accent-2);border-radius:5px;padding:2px 8px;font-size:.7rem;font-weight:600;
 }
+.project .stack-points{
+  margin:2px 0 10px 18px;
+  padding:0;
+  list-style:disc;
+}
+.project .stack-points li{
+  font-size:.78rem;
+  color:#c6d5f2;
+  line-height:1.55;
+  margin-bottom:4px;
+}
+.project .stack-points li::marker{color:var(--accent)}
+.project .stack-points strong{color:#eaf3ff;font-weight:700}
 
 /* ── Repo cards ──────────────────────────────────────── */
 .repo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:14px}
