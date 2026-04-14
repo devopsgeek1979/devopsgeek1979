@@ -259,6 +259,17 @@ p{margin:0}
 .badge.warn{background:rgba(247,183,49,.12);color:var(--warn);border-color:rgba(247,183,49,.3)}
 .badge.danger{background:rgba(255,107,107,.12);color:var(--danger);border-color:rgba(255,107,107,.3)}
 
+.profile-points{display:grid;gap:10px;margin-top:16px}
+.profile-point{padding:14px 14px 13px;border-radius:12px;background:rgba(83,216,255,.06);border:1px solid rgba(83,216,255,.16)}
+.profile-point strong{display:block;font-size:.84rem;font-weight:800;color:#fff;margin-bottom:4px}
+.profile-point span{display:block;font-size:.78rem;color:var(--muted);line-height:1.55}
+
+.role-fit-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.role-fit-chip{display:inline-flex;align-items:center;justify-content:center;padding:6px 12px;border-radius:999px;background:rgba(139,146,255,.12);border:1px solid rgba(139,146,255,.22);color:#d6dbff;font-size:.76rem;font-weight:700}
+.ghost-chip{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.10);color:var(--muted)}
+.compact-role-fit{margin-top:14px}
+.slim-notice{margin-top:14px;margin-bottom:0}
+
 /* ── Timeline ────────────────────────────────────────── */
 .timeline{display:flex;flex-direction:column;gap:22px;position:relative;padding-left:22px}
 .timeline::before{
