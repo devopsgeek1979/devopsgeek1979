@@ -312,6 +312,21 @@ p{margin:0}
 .timeline .point h3{font-size:.95rem;font-weight:700;color:#fff;margin-bottom:3px}
 .timeline .date{font-size:.75rem;color:var(--accent-2);font-weight:600;margin-bottom:6px}
 .timeline .point p{font-size:.84rem;color:var(--muted);line-height:1.6}
+.timeline-outcome{
+  margin-top:6px;
+  font-size:.78rem;
+  color:#cde1ff;
+  background:rgba(83,216,255,.08);
+  border:1px solid rgba(83,216,255,.2);
+  border-left:2px solid var(--accent);
+  border-radius:6px;
+  padding:5px 9px;
+}
+.timeline-outcome strong{color:#eef7ff}
+.outcome-points{margin:12px 0 0 18px;padding:0;list-style:disc}
+.outcome-points li{font-size:.79rem;color:#c9d9f6;line-height:1.55;margin-bottom:4px}
+.outcome-points li::marker{color:var(--accent)}
+.outcome-points strong{color:#edf7ff}
 
 /* ── Project cards ───────────────────────────────────── */
 .project{
