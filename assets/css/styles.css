@@ -844,6 +844,57 @@ a {
   margin-top: 0;
 }
 
+.social-brand-strip {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 8px 14px;
+  background: rgba(12, 21, 48, 0.75);
+  font-weight: 700;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), color var(--transition);
+}
+
+.social-brand-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 6px 18px rgba(83, 216, 255, 0.2);
+}
+
+.social-brand-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.social-brand-link .social-brand-icon .lucide {
+  width: 18px;
+  height: 18px;
+}
+
+.social-brand-link.linkedin .social-brand-icon {
+  background: linear-gradient(135deg, #0a66c2, #2f83da);
+}
+
+.social-brand-link.github .social-brand-icon {
+  background: linear-gradient(135deg, #111827, #334155);
+}
+
 /* ── Page-header label ────────────────────────────────────── */
 .page-header {
   margin: 0 0 4px;
