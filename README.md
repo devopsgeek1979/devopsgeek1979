@@ -88,6 +88,16 @@ I help teams ship faster with reliable platforms, clear engineering standards, a
 
 ---
 
+## 📌 Impact at a Glance
+
+- **16+ years** delivering enterprise DevOps and platform engineering outcomes
+- **3-cloud expertise** across Azure, AWS, and GCP for resilient architecture decisions
+- **24x7 reliability mindset** for production-critical systems and incident readiness
+- **100% automation-first approach** using Terraform, Ansible, and PYTHON
+- **OpenShift + Kubernetes specialization** for scalable, policy-driven container platforms
+
+---
+
 ## 🎯 Current Focus
 
 - Advanced OpenShift and Kubernetes operations for cluster reliability
