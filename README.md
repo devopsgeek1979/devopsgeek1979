@@ -1,11 +1,11 @@
-# 🚀 Shashi Pal — DevOps & Platform Engineer
+# 🚀 Shashi Pal — Senior DevOps | Cloud & Platform Engineering Leader
 
 <p align="center">
   <img src="./assets/ezgif.com-optimize.gif" alt="DevOps Animation" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3000&color=00F7FF&center=true&vCenter=true&width=900&lines=Senior+DevOps+Engineer+%7C+16%2B+Years+Experience;Cloud+%7C+Kubernetes+%7C+Platform+Engineering;Automation+First+%7C+Reliability+Always;Building+Scalable+and+Resilient+Systems" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=28&duration=3200&color=00F7FF&center=true&vCenter=true&width=980&lines=Senior+DevOps+Engineer+%7C+16%2B+Years+Experience;OpenShift+%7C+Kubernetes+%7C+Linux+Expert;Azure+%7C+AWS+%7C+GCP+Multi-Cloud+Architect;Ansible+%7C+Grafana+%7C+PYTHON+Automation;Driving+Reliable%2C+Scalable%2C+Production-Ready+Platforms" />
 </p>
 
 <p align="center">
