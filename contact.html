@@ -34,6 +34,11 @@
             <span class="avail-badge"><span class="avail-dot"></span> Available for consulting and senior roles</span>
           </div>
         </div>
+        <div class="contact-trust-strip">
+          <div class="contact-trust-item"><strong>48h</strong><span>Typical response time</span></div>
+          <div class="contact-trust-item"><strong>Remote</strong><span>Open to global engagements</span></div>
+          <div class="contact-trust-item"><strong>Senior</strong><span>Architecture and platform leadership</span></div>
+        </div>
       </section>
 
       <!-- Brand social + email channels -->
@@ -85,6 +90,10 @@
           <p class="contact-form-intro">
             Tell me about your project, team size, and timeline — I’ll get back to you within 48&nbsp;hours.
           </p>
+          <div class="contact-mini-note">
+            <i data-lucide="sparkles" class="lucide contact-mini-note-icon"></i>
+            Best for architecture reviews, migration planning, Kubernetes platform work, and reliability improvements.
+          </div>
 
           <div id="form-success" class="form-success" hidden aria-live="polite">
             <span class="form-success-icon">🎉</span>
@@ -92,15 +101,17 @@
           </div>
 
           <form class="contact-form modern-form" id="contact-form" action="mailto:shashi.pal1979@gmail.com" method="GET" enctype="text/plain">
-            <div class="field-float">
-              <input type="text" id="cnt-name" name="name" placeholder=" " required autocomplete="name" />
-              <label for="cnt-name">👤 Full Name</label>
-              <span class="field-bar"></span>
-            </div>
-            <div class="field-float">
-              <input type="email" id="cnt-email" name="email" placeholder=" " required autocomplete="email" />
-              <label for="cnt-email">📧 Work Email</label>
-              <span class="field-bar"></span>
+            <div class="contact-form-grid">
+              <div class="field-float">
+                <input type="text" id="cnt-name" name="name" placeholder=" " required autocomplete="name" />
+                <label for="cnt-name">👤 Full Name</label>
+                <span class="field-bar"></span>
+              </div>
+              <div class="field-float">
+                <input type="email" id="cnt-email" name="email" placeholder=" " required autocomplete="email" />
+                <label for="cnt-email">📧 Work Email</label>
+                <span class="field-bar"></span>
+              </div>
             </div>
             <div class="field-float field-select">
               <select id="cnt-topic" name="topic" required>
@@ -126,6 +137,7 @@
             <button type="submit" class="button contact-form-submit send-btn">
               <i data-lucide="send" class="lucide"></i> Send Message 🚀
             </button>
+            <p class="contact-submit-note">Prefer direct contact? Email <a href="mailto:shashi.pal1979@gmail.com">shashi.pal1979@gmail.com</a> or connect on LinkedIn above.</p>
           </form>
         </article>
 
