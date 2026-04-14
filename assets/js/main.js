@@ -50,3 +50,39 @@ if (animCards.length && 'IntersectionObserver' in window) {
     cardObs.observe(c);
   });
 }
+
+// ── Photo modal (click to enlarge profile photo) ───────
+const photoModal = document.getElementById('photoModal');
+const photoBtn = document.querySelector('.profile-photo-btn');
+const closeModalBtn = document.getElementById('closePhotoModal');
+
+if (photoBtn && photoModal) {
+  photoBtn.addEventListener('click', () => {
+    photoModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+}
+
+if (closeModalBtn && photoModal) {
+  closeModalBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    photoModal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}
+
+if (photoModal) {
+  photoModal.addEventListener('click', e => {
+    if (e.target === photoModal) {
+      photoModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+  
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && photoModal.classList.contains('active')) {
+      photoModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}

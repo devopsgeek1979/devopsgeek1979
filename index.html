@@ -53,7 +53,9 @@
           <img src="https://komarev.com/ghpvc/?username=devopsgeek1979&label=Visitors&color=53d8ff&style=flat-square" alt="Portfolio visitor count" loading="lazy" />
         </a>
         <div class="hero-head">
-          <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" width="128" height="128" loading="eager" decoding="async" />
+          <button class="profile-photo-btn" aria-label="View enlarged profile photo">
+            <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" width="128" height="128" loading="eager" decoding="async" />
+          </button>
           <div class="hero-text">
             <div class="hero-eyebrow">Senior Platform Engineering · AI Automation · DevSecOps · Data Centre</div>
             <h1>Shashi Pal &mdash; Senior DevOps, AI Automation &amp; Data Centre Engineer</h1>
@@ -197,6 +199,12 @@
       </a>
       <footer class="footer">&copy; 2026 Shashi Pal &middot; DevOps &amp; Platform Engineering &#x1F680;</footer>
     </main>
+    <div class="photo-modal" id="photoModal">
+      <div class="photo-modal-content">
+        <img src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" />
+        <button class="photo-modal-close" id="closePhotoModal" aria-label="Close photo modal"></button>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
