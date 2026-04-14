@@ -131,6 +131,7 @@
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" id="cnt-subject" name="_subject" value="Portfolio Contact Request" />
+            <input type="hidden" name="_next" value="https://devopsgeek1979.github.io/devopsgeek1979/contact.html?sent=1" />
             <div class="contact-form-grid">
               <div class="field-float">
                 <input type="text" id="cnt-name" name="name" placeholder=" " required autocomplete="name" />
@@ -229,11 +230,13 @@
       const form = document.getElementById('contact-form');
       const success = document.getElementById('form-success');
       const errorBanner = document.getElementById('form-error');
+      const successBanner = document.getElementById('form-success');
       const errorText = document.getElementById('form-error-text');
       const topicField = document.getElementById('cnt-topic');
       const subjectField = document.getElementById('cnt-subject');
       const submitBtn = document.getElementById('contact-submit-btn');
       const defaultBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      const supportsAjaxSubmit = typeof window.fetch === 'function' && typeof window.FormData === 'function';
 
       const setSubmittingState = (isSubmitting) => {
         if (!submitBtn) {
@@ -251,6 +254,11 @@
 
       if (form) {
         form.addEventListener('submit', async (event) => {
+          if (!supportsAjaxSubmit) {
+            setSubmittingState(true);
+            return;
+          }
+
           event.preventDefault();
           if (success) {
             success.hidden = true;
@@ -276,9 +284,16 @@
               body: formData
             });
 
-            const result = await response.json();
+            let result = null;
+            try {
+              result = await response.json();
+            } catch (parseError) {
+              result = { success: false, message: 'Invalid server response' };
+            }
 
-            if (!response.ok || result.success !== 'true') {
+            const isSuccessful = response.ok && (result.success === true || result.success === 'true');
+
+            if (!isSuccessful) {
               const message = typeof result.message === 'string' ? result.message : '';
               if (errorText) {
                 if (message.toLowerCase().includes('activation')) {
@@ -290,19 +305,21 @@
               throw new Error('Submission failed');
             }
 
-            if (success) {
-              success.hidden = false;
-              success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (successBanner) {
+              successBanner.hidden = false;
+              successBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
             form.reset();
             if (counter) {
               counter.textContent = '0';
             }
           } catch (error) {
-            if (errorBanner) {
-              errorBanner.hidden = false;
-              errorBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            if (errorText && !errorText.textContent.includes('activation')) {
+              errorText.textContent = 'Network issue detected. Retrying with browser-native submit...';
             }
+            setTimeout(() => {
+              HTMLFormElement.prototype.submit.call(form);
+            }, 200);
           } finally {
             setSubmittingState(false);
           }
