@@ -844,55 +844,71 @@ a {
   margin-top: 0;
 }
 
-.social-brand-strip {
-  margin-top: 14px;
+/* ── Brand channel cards (LinkedIn / GitHub / Email) ──────── */
+.brand-channels {
+  margin-top: 18px;
   display: flex;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
 }
 
-.social-brand-link {
-  display: inline-flex;
+.brand-card {
+  display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
   text-decoration: none;
   color: var(--text);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 8px 14px;
+  border-radius: 16px;
+  padding: 14px 20px;
   background: rgba(12, 21, 48, 0.75);
-  font-weight: 700;
-  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition), color var(--transition);
+  flex: 1 1 200px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
-.social-brand-link:hover {
-  transform: translateY(-1px);
-  border-color: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 6px 18px rgba(83, 216, 255, 0.2);
+.brand-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 
-.social-brand-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  display: inline-flex;
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   color: #fff;
 }
 
-.social-brand-link .social-brand-icon .lucide {
-  width: 18px;
-  height: 18px;
+.brand-linkedin .brand-logo { background: #0a66c2; }
+.brand-linkedin:hover        { border-color: #0a66c2; box-shadow: 0 8px 26px rgba(10, 102, 194, 0.35); }
+
+.brand-github .brand-logo    { background: #24292e; }
+.brand-github:hover          { border-color: #6e7681; box-shadow: 0 8px 26px rgba(110, 118, 129, 0.35); }
+
+.brand-email .brand-logo     { background: linear-gradient(135deg, var(--accent-2), var(--accent)); }
+.brand-email:hover           { border-color: var(--accent); box-shadow: 0 8px 26px rgba(83, 216, 255, 0.3); }
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.social-brand-link.linkedin .social-brand-icon {
-  background: linear-gradient(135deg, #0a66c2, #2f83da);
+.brand-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
 }
 
-.social-brand-link.github .social-brand-icon {
-  background: linear-gradient(135deg, #111827, #334155);
+.brand-handle {
+  font-size: 0.82rem;
+  color: var(--muted);
+  word-break: break-all;
 }
 
 /* ── Page-header label ────────────────────────────────────── */
