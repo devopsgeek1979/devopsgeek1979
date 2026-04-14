@@ -51,6 +51,51 @@ if (animCards.length && 'IntersectionObserver' in window) {
   });
 }
 
+// ── Photo Modal Handler ──────────────────────────────────
+const photoModal = document.getElementById('photoModal');
+const profilePhotoBtn = document.querySelector('.profile-photo-btn');
+const closePhotoModal = document.getElementById('closePhotoModal');
+
+if (photoModal && profilePhotoBtn) {
+  profilePhotoBtn.addEventListener('click', () => {
+    photoModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  const closeModal = () => {
+    photoModal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  };
+  
+  closePhotoModal?.addEventListener('click', closeModal);
+  photoModal.addEventListener('click', (e) => {
+    if (e.target === photoModal) closeModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && photoModal.classList.contains('active')) closeModal();
+  });
+}
+
+// ── Page Preview Tooltips on Headings ────────────────────
+const pageNames = {
+  'index.html': 'Home',
+  'about.html': 'About Profile',
+  'experience.html': 'My Experience',
+  'projects.html': 'Featured Projects',
+  'contact.html': 'Get in Touch',
+  'repos.html': 'GitHub Repos'
+};
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+const headings = document.querySelectorAll('h1, h2, h3');
+headings.forEach(h => {
+  if (!h.closest('.footer')) {
+    h.classList.add('page-preview-trigger');
+    const tooltip = document.createElement('div');
+    tooltip.className = 'page-preview-tooltip';
+    tooltip.textContent = `Page: ${pageNames[currentPage] || 'Portfolio'}`;
+    h.appendChild(tooltip);
+  }
+});
 // ── Photo modal (click to enlarge profile photo) ───────
 const photoModal = document.getElementById('photoModal');
 const photoBtn = document.querySelector('.profile-photo-btn');
