@@ -454,6 +454,20 @@ p{margin:0}
   border-radius:var(--radius);
   background:linear-gradient(180deg,rgba(83,216,255,.08),rgba(83,216,255,.03));
   box-shadow:0 10px 24px rgba(0,0,0,.22);
+  text-decoration:none;
+  color:inherit;
+  transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition),background var(--transition);
+}
+.footer-profile-card:hover{
+  transform:translateY(-2px);
+  border-color:rgba(83,216,255,.42);
+  background:linear-gradient(180deg,rgba(83,216,255,.14),rgba(83,216,255,.05));
+  box-shadow:0 14px 28px rgba(0,0,0,.26);
+}
+.footer-profile-card:focus-visible{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(83,216,255,.24),0 10px 24px rgba(0,0,0,.22);
 }
 .footer-profile-icon-wrap{
   width:34px;
