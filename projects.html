@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Featured projects by Shashi Pal — production-grade DevOps, Kubernetes, Terraform, cloud platform, and data center modernisation implementations focused on automation and reliability." />
-    <meta name="keywords" content="DevOps projects portfolio, Kubernetes projects, Terraform automation, cloud infrastructure projects, CI/CD pipeline projects, platform engineering portfolio, data center specialist, infrastructure migration" />
+    <meta name="keywords" content="DevOps projects portfolio, Kubernetes projects, Terraform automation, cloud infrastructure projects, CI/CD pipeline projects, platform engineering portfolio, DevSecOps, SonarQube, Trivy, Snyk, Checkov, OWASP ZAP, HashiCorp Vault, Cosign, supply chain security, data center specialist, infrastructure migration" />
     <meta name="author" content="Shashi Pal" />
     <meta name="robots" content="index, follow" />
     <title>Projects | Shashi Pal — DevOps &amp; Platform Engineering Portfolio</title>
@@ -51,7 +51,7 @@
         <div class="hero-head">
           <img class="profile-photo" src="https://github.com/devopsgeek1979.png" alt="Shashi Pal profile photo" width="92" height="92" loading="eager" decoding="async" />
           <div class="hero-text">
-            <div class="hero-eyebrow">Automation · Reliability · Cloud Scale · Data Center Delivery</div>
+            <div class="hero-eyebrow">Automation · DevSecOps · Reliability · Cloud Scale · Data Center Delivery</div>
             <h1>&#x1F5C2;&#xFE0F; Featured Projects</h1>
             <p>Deployment-led portfolio highlighting end-to-end implementation from design, build, migration, validation, and production go-live.</p>
           </div>
@@ -116,14 +116,15 @@
             <p>Workflow-driven automation platform for repetitive operations, reducing manual intervention and lead time by 70%. Implemented deployment-safe job orchestration with approval gates, execution logs, and Slack-integrated operational notifications.</p>
             <div class="impact">&#x26A1; Impact: 70% reduction in manual operational tasks &middot; 4h saved per engineer per week</div>
             <div class="tech">
-              <span>Python</span><span>GitHub Actions</span><span>AWS Lambda</span><span>Slack API</span><span>DynamoDB</span>
+              <span>Python</span><span>GitHub Actions</span><span>AWS Lambda</span><span>Slack API</span><span>DynamoDB</span><span>SonarQube</span><span>Snyk</span>
             </div>
             <ul class="stack-points">
               <li><strong>Python:</strong> Built core automation logic, workflow orchestration, and reusable operational utilities.</li>
               <li><strong>GitHub Actions:</strong> Implemented CI/CD-triggered execution pipelines with approvals and auditable run history.</li>
               <li><strong>AWS Lambda + DynamoDB:</strong> Delivered serverless execution and durable state tracking for low-maintenance automation runs.</li>
               <li><strong>Slack API:</strong> Integrated real-time notifications and response hooks for operations visibility and faster team collaboration.</li>
-              <li><strong>Business Outcome:</strong> Reduced manual workload and improved delivery speed through reliable, auditable automation at scale.</li>
+              <li><strong>SonarQube + Snyk:</strong> Applied SAST code quality gates and dependency vulnerability checks to all automation code before deployment.</li>
+              <li><strong>Business Outcome:</strong> Reduced manual workload and improved delivery speed through reliable, auditable, and secure automation at scale.</li>
             </ul>
             <span class="badge">Automation</span>
           </div>
@@ -133,16 +134,41 @@
             <p>Standardised provisioning modules for AWS and Azure with environment parity, governance controls, drift detection, and automated compliance checks via Open Policy Agent. Implemented versioned module release pipelines and environment promotion workflow from dev to production.</p>
             <div class="impact">&#x26A1; Impact: 80% faster environment provisioning &middot; Zero manual drift incidents</div>
             <div class="tech">
-              <span>Terraform</span><span>AWS</span><span>Azure</span><span>GitHub Actions</span><span>OPA</span>
+              <span>Terraform</span><span>AWS</span><span>Azure</span><span>GitHub Actions</span><span>OPA</span><span>Checkov</span><span>HashiCorp Vault</span>
             </div>
             <ul class="stack-points">
               <li><strong>Terraform:</strong> Created modular infrastructure code with environment parity and repeatable provisioning workflows.</li>
               <li><strong>AWS + Azure:</strong> Implemented multi-cloud landing patterns and policy-aligned baseline resources for scalable operations.</li>
               <li><strong>GitHub Actions:</strong> Automated plan/apply promotion pipelines from development to production with review checkpoints.</li>
               <li><strong>OPA:</strong> Enforced policy-as-code guardrails to prevent non-compliant infrastructure changes before deployment.</li>
-              <li><strong>Business Outcome:</strong> Accelerated environment delivery while improving governance and deployment consistency across cloud platforms.</li>
+              <li><strong>Checkov:</strong> Ran 500+ IaC security checks against every Terraform plan to surface misconfigurations before provisioning.</li>
+              <li><strong>HashiCorp Vault:</strong> Injected dynamic cloud credentials into pipelines, eliminating long-lived static access keys.</li>
+              <li><strong>Business Outcome:</strong> Accelerated environment delivery while improving governance, security posture, and deployment consistency across cloud platforms.</li>
             </ul>
             <span class="badge">IaC</span>
+          </div>
+
+          <div class="project">
+            <h3>&#x1F6E1;&#xFE0F; DevSecOps Pipeline &amp; Shift-Left Security</h3>
+            <p>Designed and implemented a company-wide DevSecOps pipeline strategy embedding security controls at every stage of the software delivery lifecycle. Integrated SonarQube for static application security testing (SAST), Trivy for container and filesystem vulnerability scanning, Snyk for open-source dependency analysis, Checkov for IaC policy enforcement, and OWASP ZAP for dynamic application security testing (DAST) in staging environments.</p>
+            <p>Centralised secrets management using HashiCorp Vault with dynamic secret leases, removing all hardcoded credentials from code and CI/CD configurations. Implemented Cosign and Sigstore-based container image signing to enforce supply-chain integrity and prevent tampered image deployments in Kubernetes clusters.</p>
+            <div class="impact">&#x26A1; Impact: 100% pipeline security gate coverage &middot; Zero hardcoded credential incidents &middot; 80% reduction in unpatched CVEs in production images</div>
+            <div class="tech">
+              <span>SonarQube</span><span>Trivy</span><span>Snyk</span><span>Checkov</span>
+              <span>OWASP ZAP</span><span>HashiCorp Vault</span><span>Cosign</span><span>Sigstore</span>
+              <span>GitHub Actions</span><span>ArgoCD</span><span>Kubernetes</span>
+            </div>
+            <ul class="stack-points">
+              <li><strong>SonarQube:</strong> Enforced SAST quality gates blocking merges on critical code vulnerabilities, code smells, and coverage thresholds in every pull request.</li>
+              <li><strong>Trivy:</strong> Scanned container images, Kubernetes manifests, Helm charts, and filesystems for CVEs and misconfigurations as part of the CI build stage.</li>
+              <li><strong>Snyk:</strong> Continuously monitored open-source dependencies for known vulnerabilities with auto-remediation PR suggestions and licence compliance checks.</li>
+              <li><strong>Checkov:</strong> Applied 500+ built-in IaC security checks across Terraform and Kubernetes manifests to catch misconfigurations before infrastructure provisioning.</li>
+              <li><strong>OWASP ZAP:</strong> Automated DAST scans against staging environments to detect injection, authentication, and API security risks at runtime.</li>
+              <li><strong>HashiCorp Vault:</strong> Implemented dynamic secrets, token lease management, and Kubernetes auth for zero-static-credential pipelines.</li>
+              <li><strong>Cosign + Sigstore:</strong> Signed and verified container images cryptographically to prevent supply-chain attacks and enforce image provenance policies.</li>
+              <li><strong>Business Outcome:</strong> Eliminated credential sprawl, reduced unpatched CVEs by 80%, and gave security teams full visibility into every release artefact.</li>
+            </ul>
+            <span class="badge">DevSecOps</span>
           </div>
 
           <div class="project">
@@ -150,14 +176,15 @@
             <p>Deployed GitOps workflows across 15+ services, enabling self-service deployment with full audit trail, canary rollouts, and automatic rollback on SLO violation. Designed progressive deployment policies and operational guardrails for controlled production changes.</p>
             <div class="impact">&#x26A1; Impact: 5&times; deployment frequency increase &middot; Near-zero failed deployments</div>
             <div class="tech">
-              <span>ArgoCD</span><span>Kubernetes</span><span>Helm</span><span>GitHub</span><span>Kustomize</span>
+              <span>ArgoCD</span><span>Kubernetes</span><span>Helm</span><span>GitHub</span><span>Kustomize</span><span>Trivy</span><span>Cosign</span>
             </div>
             <ul class="stack-points">
               <li><strong>ArgoCD:</strong> Established declarative GitOps deployment control with health checks and sync governance.</li>
               <li><strong>Kubernetes:</strong> Operated multi-service runtime environments with scalable and resilient release behavior.</li>
               <li><strong>Helm + Kustomize:</strong> Standardised packaging and environment overlays for controlled configuration promotion.</li>
               <li><strong>GitHub:</strong> Used pull-request driven change management and auditable release history for production readiness.</li>
-              <li><strong>Business Outcome:</strong> Increased release velocity with safer production deployments and lower failure rates.</li>
+              <li><strong>Trivy + Cosign:</strong> Enforced container scanning and image signing gates in the GitOps sync pipeline to prevent vulnerable artefacts reaching production.</li>
+              <li><strong>Business Outcome:</strong> Increased release velocity with safer production deployments, lower failure rates, and signed image provenance.</li>
             </ul>
             <span class="badge info">GitOps</span>
           </div>
