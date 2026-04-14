@@ -69,6 +69,29 @@ p{margin:0}
   border:1px solid var(--border-soft);
   box-shadow:var(--shadow-lg);
 }
+.hero-view-ribbon{
+  position:absolute;
+  top:14px;
+  right:14px;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid rgba(83,216,255,.34);
+  background:rgba(8,18,42,.72);
+  -webkit-backdrop-filter:blur(8px);
+  backdrop-filter:blur(8px);
+  box-shadow:0 8px 24px rgba(0,0,0,.28);
+  text-decoration:none;
+  color:#e9f7ff;
+  transition:transform var(--transition),border-color var(--transition),background var(--transition);
+}
+.hero-view-ribbon:hover{transform:translateY(-1px);border-color:rgba(83,216,255,.58);background:rgba(10,22,50,.82)}
+.hero-view-ribbon:focus-visible{outline:none;box-shadow:0 0 0 3px rgba(83,216,255,.25),0 8px 24px rgba(0,0,0,.28)}
+.hero-view-ribbon-label{font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#c7e8ff}
+.hero-view-ribbon img{height:22px;width:auto;display:block}
 .hero::before{
   content:'';position:absolute;inset:auto -60px -80px auto;width:220px;height:220px;border-radius:50%;
   background:radial-gradient(circle, rgba(83,216,255,.18), transparent 68%);
@@ -545,6 +568,7 @@ p{margin:0}
   .contact-trust-strip{grid-template-columns:1fr}
   .contact-form input,.contact-form textarea,.contact-form select{font-size:16px}
   .brand-card{padding:20px 14px 18px}
+  .hero-view-ribbon{position:static;margin:0 auto 14px;justify-content:center;width:fit-content}
   .footer-links{gap:10px 14px}
   .footer-profile-card{padding:14px 12px;gap:10px}
   .footer-profile-title,.footer-profile-subtitle{width:100%;text-align:center}
