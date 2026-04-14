@@ -164,7 +164,7 @@
               <span class="field-bar"></span>
               <div class="char-counter"><span id="char-count">0</span>&nbsp;/ 800</div>
             </div>
-            <button type="submit" class="button contact-form-submit send-btn">
+            <button type="submit" class="button contact-form-submit send-btn" id="contact-submit-btn">
               <i data-lucide="send" class="lucide"></i> Send Message 🚀
             </button>
             <p class="contact-submit-note">Prefer direct contact? Email <a href="mailto:vashisht.jammu@gmail.com">vashisht.jammu@gmail.com</a> or connect on LinkedIn above.</p>
@@ -234,12 +234,29 @@
       const topicField = document.getElementById('cnt-topic');
       const messageField = document.getElementById('cnt-message');
       const subjectField = document.getElementById('cnt-subject');
+      const submitBtn = document.getElementById('contact-submit-btn');
+      const defaultBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+
+      const setSubmittingState = (isSubmitting) => {
+        if (!submitBtn) {
+          return;
+        }
+        submitBtn.disabled = isSubmitting;
+        submitBtn.setAttribute('aria-busy', String(isSubmitting));
+        submitBtn.innerHTML = isSubmitting
+          ? '<i data-lucide="loader" class="lucide"></i> Sending...'
+          : defaultBtnHtml;
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          window.lucide.createIcons();
+        }
+      };
 
       if (form && success && errorBanner) {
         form.addEventListener('submit', async (e) => {
           e.preventDefault();
           success.hidden = true;
           errorBanner.hidden = true;
+          setSubmittingState(true);
 
           if (subjectField && topicField) {
             const selectedTopic = topicField.value || 'General Inquiry';
@@ -265,6 +282,7 @@
             if (counter) {
               counter.textContent = '0';
             }
+            setSubmittingState(false);
           } catch (error) {
             const name = nameField ? nameField.value : '';
             const senderEmail = emailField ? emailField.value : '';
@@ -275,6 +293,7 @@
             window.location.href = `mailto:vashisht.jammu@gmail.com?subject=${encodeURIComponent(mailtoSubject)}&body=${encodeURIComponent(rawBody)}`;
             errorBanner.hidden = false;
             errorBanner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setSubmittingState(false);
           }
         });
       }
