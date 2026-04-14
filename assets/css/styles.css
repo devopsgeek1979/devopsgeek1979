@@ -103,7 +103,7 @@ p{margin:0}
   pointer-events:none;
 }
 .hero-head{display:flex;align-items:flex-start;gap:22px;margin-bottom:20px}
-.profile-photo{width:120px;height:120px;border-radius:50%;border:3px solid var(--accent);flex-shrink:0;animation:float 5s ease-in-out infinite}
+.profile-photo{width:128px;height:128px;border-radius:50%;border:3px solid var(--accent);flex-shrink:0;animation:float 5s ease-in-out infinite}
 .hero-text{flex:1}
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;
@@ -611,7 +611,7 @@ p{margin:0}
   .hero{padding:18px 14px;border-radius:18px}
   .card{padding:18px}
   .hero-metrics,.impact-strip{grid-template-columns:1fr}
-  .profile-photo{width:105px;height:105px}
+  .profile-photo{width:112px;height:112px}
   .hero h1{font-size:1.45rem}
   .hero-kpi{width:100%;justify-content:center;text-align:center}
 }
