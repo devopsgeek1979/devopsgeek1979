@@ -72,6 +72,17 @@
     return `${readableName} repository with practical ${language} implementation examples, automation workflows, and maintainable project structure.`;
   }
 
+  function normalizeDescription(value) {
+    if (value === null || value === undefined) return '';
+    const normalized = String(value).trim();
+    if (!normalized) return '';
+    const lower = normalized.toLowerCase();
+    if (lower === 'null' || lower === 'undefined' || lower === 'n/a' || lower === 'na') {
+      return '';
+    }
+    return normalized;
+  }
+
   function langDot(lang) {
     const color = LANG_COLORS[lang] || '#8fa2d9';
     return `<span class="repo-lang-dot" style="background:${color}"></span>`;
@@ -80,7 +91,8 @@
   function renderRepo(repo) {
     const safeName = escapeHTML(repo.name || 'untitled-repo');
     const safeUrl = safeExternalUrl(repo.html_url);
-    const safeDescription = repo.description ? escapeHTML(String(repo.description).trim()) : '';
+    const normalizedDescription = normalizeDescription(repo.description);
+    const safeDescription = normalizedDescription ? escapeHTML(normalizedDescription) : '';
     const safeLanguage = repo.language ? escapeHTML(repo.language) : '';
     const desc    = safeDescription || escapeHTML(getFallbackDescription(repo));
     const lang    = safeLanguage ? `<span class="repo-lang">${langDot(safeLanguage)}${safeLanguage}</span>` : '';
