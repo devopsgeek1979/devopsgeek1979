@@ -98,6 +98,25 @@ I help teams ship faster with reliable platforms, clear engineering standards, a
 
 ---
 
+## 🧰 Core Competencies
+
+- **Container Platforms:** Openshift/OpenShift, Kubernetes, Docker
+- **Cloud Platforms:** Azure, AWS, GCP (multi-cloud architecture)
+- **Infrastructure Automation:** Terraform, Ansible, GitHub Actions, Jenkins
+- **Observability Stack:** Grafana, Prometheus, alerting and incident response
+- **Scripting & Automation:** PYTHON, Linux shell automation, operational tooling
+
+---
+
+## 📈 Business Outcomes
+
+- **Faster delivery cycles** through CI/CD automation and release standardization
+- **Higher platform reliability** using self-healing patterns and proactive observability
+- **Improved cloud governance** with policy-driven infrastructure provisioning
+- **Reduced operational risk** via automation-first runbooks and repeatable workflows
+
+---
+
 ## 🎯 Current Focus
 
 - Advanced OpenShift and Kubernetes operations for cluster reliability
